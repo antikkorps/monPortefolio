@@ -2,9 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Citation from '../components/Citation.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout title='Welcome to Astro.'>
+  <Hero />
   <main>
     <h1>Bienvenue sur mon <span class='text-gradient'>Portfolio</span></h1>
     <p class='instructions'>
@@ -15,23 +17,27 @@ import Citation from '../components/Citation.astro';
     <ul role='list' class='link-card-grid'>
       <Card
         href='https://docs.astro.build/'
-        title='Documentation'
+        title='Projet 1'
         body='Learn how Astro works and explore the official API docs.'
+        author='Franck'
       />
       <Card
         href='https://astro.build/integrations/'
-        title='Integrations'
+        title='Projet 2'
         body='Supercharge your project with new frameworks and libraries.'
+        author='Franck'
       />
       <Card
         href='https://astro.build/themes/'
-        title='Themes'
+        title='Projet 3'
         body='Explore a galaxy of community-built starter themes.'
+        author='Franck'
       />
       <Card
         href='https://astro.build/chat/'
-        title='Community'
+        title='Projet 4'
         body='Come say hi to our amazing Discord community. ❤️'
+        author='Franck'
       />
     </ul>
     <Citation author='Sindre Sorhus' />

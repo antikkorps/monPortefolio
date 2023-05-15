@@ -3,12 +3,13 @@ export interface Props {
   title: string;
   body: string;
   href: string;
+  author: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, author } = Astro.props;
 ---
 
-<div class='card'>
+<div class='card mt-4'>
   <div class='card-image'>
     <figure class='image is-4by3'>
       <img
@@ -28,14 +29,14 @@ const { href, title, body } = Astro.props;
         </figure>
       </div>
       <div class='media-content'>
-        <p class='title is-4'>John Smith</p>
-        <p class='subtitle is-6'>@johnsmith</p>
+        <p class='title is-4'>{title}</p>
+        <p class='subtitle is-6'>@{author}</p>
       </div>
     </div>
 
     <div class='content'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-      iaculis mauris. <a>@bulmaio</a>.
+      {body}
+      <a>@bulmaio</a>.
       <a href='#'>#css</a>
       <a href='#'>#responsive</a>
       <br />
