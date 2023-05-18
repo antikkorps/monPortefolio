@@ -6,12 +6,18 @@
     display: block;
     inset: 3.25rem 0 auto;
     position: fixed;
-    height: 0.5rem;
+    height: 0.6rem;
     background: purple;
     z-index: 1;
     transform-origin: left;
   }
-</style>
+  
+  @media screen and (min-width: 1023px) {
+    .scroll-tracker {
+      inset: 3.5rem 0 auto;
+    }
+
+  </style>
 
 <nav class='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
   <div class='navbar-brand'>
