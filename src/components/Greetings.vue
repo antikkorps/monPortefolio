@@ -16,5 +16,6 @@ export default {
 .greeting {
   color: red;
   font-weight: bold;
+  font-size: 2rem;
 }
 </style>
