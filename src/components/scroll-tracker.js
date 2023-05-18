@@ -1,6 +1,7 @@
 import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
 
 const scrollTracker = document.querySelector('.scroll-tracker');
+
 scrollTracker.animate(
   { transform: ['scaleX(0)', 'scaleX(1)'] },
   {
