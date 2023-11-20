@@ -13,15 +13,17 @@ const { href, title, body, author, image } = Astro.props
 <div class="card mt-5 my_card">
   <a href={href}
     ><div class="card-image">
-      <figure class="image is-4by3">
-        <img src={image} alt="Placeholder image" />
-      </figure>
+      <div class="image-wrapper">
+        <figure class="image is-4by3">
+          <img src={image} alt="Placeholder image" />
+        </figure>
+      </div>
     </div>
   </a>
   <div class="card-content">
     <div class="media">
       <div class="media-content">
-        <a href={href}><p class="title is-4">{title}</p></a>
+        <a href={href}><p class="title is-5">{title}</p></a>
         <p class="subtitle is-6">@{author}</p>
       </div>
     </div>
@@ -34,3 +36,19 @@ const { href, title, body, author, image } = Astro.props
     <a href="#">#responsive</a>
   </div>
 </div>
+
+<style>
+  .card-image img {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card-image .image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .card-image img:hover {
+    opacity: 0.8;
+    transform: rotate(5deg) scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
+</style>
