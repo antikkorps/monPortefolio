@@ -1,20 +1,20 @@
 ---
 export interface Props {
-  title: string;
+  title: string
 }
 
-const { title } = Astro.props;
-import 'bulma/css/bulma.css';
-import Navbar from '../components/Navbar.astro';
+const { title } = Astro.props
+import "bulma/css/bulma.css"
+import Navbar from "../components/Navbar.astro"
 ---
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
@@ -22,28 +22,28 @@ import Navbar from '../components/Navbar.astro';
     <slot />
     <script>
       //bulma navbar burger
-      document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener("DOMContentLoaded", () => {
         // Get all "navbar-burger" elements
         const $navbarBurgers = Array.prototype.slice.call(
-          document.querySelectorAll('.navbar-burger'),
+          document.querySelectorAll(".navbar-burger"),
           0
-        );
+        )
 
         // Add a click event on each of them
         $navbarBurgers.forEach((el) => {
-          el.addEventListener('click', () => {
+          el.addEventListener("click", () => {
             // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
+            const target = el.dataset.target
+            const $target = document.getElementById(target)
 
             // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-          });
-        });
-      });
+            el.classList.toggle("is-active")
+            $target.classList.toggle("is-active")
+          })
+        })
+      })
     </script>
-    <script src='../components/scroll-tracker.js'></script>
+    <script src="../components/scroll-tracker.js"></script>
 
     <style is:global>
       :root {
@@ -59,12 +59,10 @@ import Navbar from '../components/Navbar.astro';
         font-family: system-ui, sans-serif;
         background-color: #f6f6f6;
       }
-      body {
-        background-color: #18122b;
-      }
+
       code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+          Bitstream Vera Sans Mono, Courier New, monospace;
       }
     </style>
   </body>
