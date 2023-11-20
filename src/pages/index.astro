@@ -1,43 +1,46 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Citation from '../components/Citation.astro';
-import Hero from '../components/Hero.astro';
-import FancyImage from '../components/FancyImage.astro';
-import Greetings from '../components/Greetings.vue';
+import Layout from "../layouts/Layout.astro"
+import Card from "../components/Card.astro"
+import Citation from "../components/Citation.astro"
+import Hero from "../components/Hero.astro"
+import FancyImage from "../components/FancyImage.astro"
+import Greetings from "../components/Greetings.vue"
 ---
 
-<Layout title='Welcome to Astro.'>
+<Layout title="Welcome to Astro.">
   <Hero />
   <main>
-    <section class='card_section py-4'>
-      <ul role='list' class='link-card-grid'>
+    <section class="card_section py-4">
+      <ul role="list" class="link-card-grid">
         <Card
-          href='https://docs.astro.build/'
-          title='Projet 1'
-          body='Learn how Astro works and explore the official API docs.'
-          author='Franck'
+          href="https://maformationimmo.info/"
+          title="Ma formation immo"
+          body="Une landing page autour de l'offre de formation immo du client"
+          author="Franck"
         />
         <Card
-          href='https://astro.build/integrations/'
-          title='Projet 2'
-          body='Supercharge your project with new frameworks and libraries.'
-          author='Franck'
+          href="https://astro.build/integrations/"
+          title="Projet 2"
+          body="Supercharge your project with new frameworks and libraries."
+          author="Franck"
         />
         <Card
-          href='https://astro.build/themes/'
-          title='Projet 3'
-          body='Explore a galaxy of community-built starter themes.'
-          author='Franck'
+          href="https://astro.build/themes/"
+          title="Projet 3"
+          body="Explore a galaxy of community-built starter themes."
+          author="Franck"
         />
         <Card
-          href='https://astro.build/chat/'
-          title='Projet 4'
-          body='Come say hi to our amazing Discord community. ❤️'
-          author='Franck'
+          href="https://astro.build/chat/"
+          title="Projet 4"
+          body="Come say hi to our amazing Discord community. ❤️"
+          author="Franck"
         />
       </ul>
-      <Citation author='Sindre Sorhus' />
+      <Citation
+        author="John Woods"
+        citation="Codez toujours comme si la personne qui allait maintenir votre code était un violent psychopathe qui sait où vous habitez."
+      />
     </section>
     <FancyImage />
     <Greetings />
