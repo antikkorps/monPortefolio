@@ -1,5 +1,58 @@
 ---
+import Image from "astro/components/Image.astro";
+import LogoGit from "../images/social/github-mark.png"
 ---
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/"> Franck Vienot</a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="/" class="navbar-item">Accueil</a>
+
+      <a class="navbar-item">Blog</a>
+
+      <a href="/about" class="navbar-item">A propos</a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="/projects" class="navbar-link">Mes projets</a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">Web</a>
+          <a class="navbar-item">Mes projets</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a href="https://github.com/antikkorps"
+            ><Image src={LogoGit} width={30} height={60} alt="logo Github" class="mr-2" /></a
+          >
+          <a class="button is-primary">
+            <strong>Contactez-moi</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-tracker"></div>
+</nav>
 
 <style>
   .scroll-tracker {
@@ -11,60 +64,10 @@
     z-index: 1;
     transform-origin: left;
   }
-  
+
   @media screen and (min-width: 1023px) {
     .scroll-tracker {
       inset: 3.5rem 0 auto;
     }
-
-  </style>
-
-<nav class='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
-  <div class='navbar-brand'>
-    <a class='navbar-item' href='https://github.com/antikkorps'>
-      Franck Vienot
-    </a>
-
-    <a
-      role='button'
-      class='navbar-burger'
-      aria-label='menu'
-      aria-expanded='false'
-      data-target='navbarBasicExample'
-    >
-      <span aria-hidden='true'></span>
-      <span aria-hidden='true'></span>
-      <span aria-hidden='true'></span>
-    </a>
-  </div>
-
-  <div id='navbarBasicExample' class='navbar-menu'>
-    <div class='navbar-start'>
-      <a href="/" class='navbar-item'>Accueil</a>
-
-      <a class='navbar-item'>Blog</a>
-
-      <a href="/about" class='navbar-item'>Qui suis-je ?</a>
-
-      <div class='navbar-item has-dropdown is-hoverable'>
-        <a href="/projects" class='navbar-link'>Mes projets</a>
-
-        <div class='navbar-dropdown'>
-          <a class='navbar-item'>Web</a>
-          <a class='navbar-item'>Mes projets</a>
-        </div>
-      </div>
-    </div>
-
-    <div class='navbar-end'>
-      <div class='navbar-item'>
-        <div class='buttons'>
-          <a class='button is-primary'>
-            <strong>Contactez-moi</strong>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class='scroll-tracker'></div>
-</nav>
+  }
+</style>

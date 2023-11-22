@@ -1,5 +1,7 @@
 ---
-import image2 from "../src/images/image_2.avif"
+import { Image } from "astro:assets";
+import image2 from "../images/image_2.avif"
+
 ---
 
 <style>
@@ -23,7 +25,7 @@ import image2 from "../src/images/image_2.avif"
 
 <section>
   <div class="container_image is-flex is-justify-content-center my-5">
-    <img src={image2} alt="" id="fusee" />
+    <Image src={image2} alt="fusée" id="fusee" />
   </div>
   <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum maxime assumenda
