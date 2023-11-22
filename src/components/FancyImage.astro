@@ -1,27 +1,10 @@
 ---
-import { Image } from "astro:assets";
+import Image from "astro/components/Image.astro";
 import image2 from "../images/image_2.avif"
 
 ---
 
-<style>
-  .container_image {
-    width: 100%;
-    height: auto;
-  }
-  #fusee {
-    justify-content: center;
-    border-radius: 1rem;
-    width: 50rem;
-    height: auto;
-    transition: transform 0.5s ease-in-out;
-  }
-  #fusee:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
-    overflow: hidden;
-  }
-</style>
+
 
 <section>
   <div class="container_image is-flex is-justify-content-center my-5">
@@ -45,3 +28,22 @@ import image2 from "../images/image_2.avif"
     veritatis!
   </p>
 </section>
+
+<style>
+  .container_image {
+    width: 100%;
+    height: auto;
+  }
+  #fusee {
+    justify-content: center;
+    border-radius: 1rem;
+    width: 50rem;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  #fusee:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+  }
+</style>
