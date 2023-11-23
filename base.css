@@ -14,6 +14,11 @@
     @apply text-white font-bold py-2 px-4 rounded;
   }
 
+  /* LINKS ON HOVER */
+  .menu_text {
+    @apply text-white hover:text-fuchsia-600;
+  }
+
   /* CODE */
   .code {
     @apply bg-fuchsia-100 text-fuchsia-900 font-mono text-xl px-2 py-1 rounded;
