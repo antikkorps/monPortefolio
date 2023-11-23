@@ -1,0 +1,40 @@
+---
+---
+
+<div class="image-gallery my-10">
+
+    <img class="rounded-md" src="https://picsum.photos/id/23/200" alt="">
+    <img class="rounded-md" src="https://picsum.photos/id/20/200" alt="">
+    <img class="rounded-md" src="https://picsum.photos/id/26/200" alt="">
+    <img class="rounded-md" src="https://picsum.photos/id/41/200" alt="">
+    <img class="rounded-md" src="https://picsum.photos/id/60/200" alt="">
+    <img class="rounded-md" src="https://picsum.photos/id/76/200" alt="">
+    <img class="rounded-md" src="https://picsum.photos/id/82/200" alt="">
+    <img class="rounded-md" src="https://picsum.photos/id/103/200" alt="">
+    <img class="rounded-md" src="https://picsum.photos/id/133/200" alt="">
+
+</div>
+
+<style>
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        max-width: 50rem;
+        margin-inline: auto;
+    }
+    .image-gallery > img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+
+        transition: 
+        scale 350ms ease,
+        opacity 350ms linear;
+    }
+
+    .image-gallery:has(img:hover) > img:not(:hover) {
+        scale: 0.8;
+        opacity: 0.7;
+    }
+</style>

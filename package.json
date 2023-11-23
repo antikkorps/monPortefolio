@@ -23,6 +23,7 @@
     "vue": "^3.3.8"
   },
   "devDependencies": {
-    "daisyui": "^4.4.2"
+    "daisyui": "^4.4.2",
+    "prettier-plugin-astro": "^0.12.2"
   }
 }

@@ -3,21 +3,23 @@ import Layout from "../layouts/Layout.astro"
 import Card from "../components/Card.astro"
 import Citation from "../components/Citation.astro"
 import Hero from "../components/Hero.astro"
-import FancyImage from "../components/FancyImage.astro"
+import ImageGallery from "../components/ImageGallery.astro"
 import Greetings from "../components/Greetings.vue"
 ---
 
 <Layout title="Welcome to my Portefolio">
   <Hero />
   <main>
-    <section class="card_section py-4">
-      <ul role="list" class="link-card-grid">
+    <ImageGallery />
+    <section class="card_section py-5">
+      <ul role="list" class="mx-auto flex flex-col md:flex-row justify-center items-center">
         <Card
           image="/src/images/maformationimmo.png"
           href="https://maformationimmo.info/"
-          title="Ma formation immo"
-          body="Une landing page autour de l'offre de formation immo du client"
+          title="MaformationImmo"
+          body="Une landing page autour de l'offre de formation immo du client sur la base du maquettage du service communication."
           author="Franck"
+          tags={["wordpress", "cms"]}
         />
         <Card
           image="https://bulma.io/images/placeholders/1280x960.png"
@@ -25,6 +27,7 @@ import Greetings from "../components/Greetings.vue"
           title="Projet 2"
           body="Supercharge your project with new frameworks and libraries."
           author="Franck"
+          tags={["vueJS", "NestJS"]}
         />
         <Card
           image="https://bulma.io/images/placeholders/1280x960.png"
@@ -32,6 +35,7 @@ import Greetings from "../components/Greetings.vue"
           title="Projet 3"
           body="Explore a galaxy of community-built starter themes."
           author="Franck"
+          tags={["wordpress", "cms"]}
         />
         <Card
           image="https://bulma.io/images/placeholders/1280x960.png"
@@ -39,6 +43,7 @@ import Greetings from "../components/Greetings.vue"
           title="Projet 4"
           body="Come say hi to our amazing Discord community. ❤️"
           author="Franck"
+          tags={["wordpress", "cms"]}
         />
       </ul>
       <Citation
@@ -46,7 +51,6 @@ import Greetings from "../components/Greetings.vue"
         citation="Codez toujours comme si la personne qui allait maintenir votre code était un violent psychopathe qui sait où vous habitez."
       />
     </section>
-    <FancyImage />
     <Greetings />
   </main>
 </Layout>
@@ -57,13 +61,7 @@ import Greetings from "../components/Greetings.vue"
     padding: 1.5rem;
     max-width: 95%;
   }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
-  }
-
+  
   @media screen and (min-width: 1000px) {
     main {
       margin: auto;
