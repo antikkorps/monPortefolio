@@ -12,7 +12,7 @@ import Greetings from "../components/Greetings.vue"
   <main>
     <ImageGallery />
     <section class="card_section py-5">
-      <ul role="list" class="mx-auto flex flex-col md:flex-row justify-center items-center">
+      <div role="list" class="mx-auto flex flex-col md:flex-row justify-center items-center">
         <Card
           image="/src/images/maformationimmo.png"
           href="https://maformationimmo.info/"
@@ -38,14 +38,14 @@ import Greetings from "../components/Greetings.vue"
           tags={["wordpress", "cms"]}
         />
         <Card
-          image="https://bulma.io/images/placeholders/1280x960.png"
-          href="https://astro.build/chat/"
-          title="Projet 4"
-          body="Come say hi to our amazing Discord community. ❤️"
+          image="/src/images/lesitedelasso.png"
+          href="https://lesitedelasso.netlify.app/"
+          title="Le Site de l'asso"
+          body="Un projet réalisé lors de ma formation. Il utilise Bootstrap ❤️ et rien d'autre"
           author="Franck"
-          tags={["wordpress", "cms"]}
+          tags={["bootstrap", "html"]}
         />
-      </ul>
+      </div>
       <Citation
         author="John Woods"
         citation="Codez toujours comme si la personne qui allait maintenir votre code était un violent psychopathe qui sait où vous habitez."
