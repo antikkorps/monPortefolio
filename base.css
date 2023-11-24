@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  /* MAIN CONTENT */
+  .main_content {
+    @apply py-20;
+  }
   /* BUTTONS */
   .button_primary {
     @apply bg-fuchsia-600 hover:bg-fuchsia-800 text-white font-bold py-2 px-4 rounded hover:rounded-xl ease-in-out duration-200;
