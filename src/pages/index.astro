@@ -5,6 +5,8 @@ import Citation from "../components/Citation.astro"
 import Hero from "../components/Hero.astro"
 import ImageGallery from "../components/ImageGallery.astro"
 import Greetings from "../components/Greetings.vue"
+import maformationImmo from "/src/images/maformationimmo.png"
+import lesitedelasso from "/src/images/lesitedelasso.png"
 ---
 
 <Layout title="Welcome to my Portefolio">
@@ -14,7 +16,7 @@ import Greetings from "../components/Greetings.vue"
     <section class="card_section py-5">
       <div role="list" class="mx-auto flex flex-col md:flex-row justify-center items-center">
         <Card
-          image="../images/maformationimmo.png"
+          image={maformationImmo.src}
           href="https://maformationimmo.info/"
           title="MaformationImmo"
           body="Une landing page autour de l'offre de formation immo du client sur la base du maquettage du service communication."
@@ -38,7 +40,7 @@ import Greetings from "../components/Greetings.vue"
           tags={["wordpress", "cms"]}
         />
         <Card
-          image="../images/lesitedelasso.png"
+          image={lesitedelasso.src}
           href="https://lesitedelasso.netlify.app/"
           title="Le Site de l'asso"
           body="Un projet réalisé lors de ma formation. Il utilise Bootstrap ❤️ et rien d'autre"
