@@ -1,0 +1,79 @@
+---
+export interface Questions {
+  question: string
+  answers: object
+  correctAnswer: string
+}
+ export interface Messages {
+  emoji: string
+  message: string
+}
+
+
+const { question, answers, correctAnswer } = Astro.props
+
+const { emoji, message } = Astro.props
+---
+
+<div class="form-container">
+    <form action="" class="quizz-form">
+        <div class="question-block">
+            <h4>
+                { question }
+            </h4>
+
+            {answers.map((answer, index) => (
+                <div class="question-container" key={index}>
+                    <input
+                        type="radio"
+                        id={`answer-${question}-${index}`}
+                        name={`${question}`}
+                        value={answer}
+                        checked={index === 0}
+                    />
+                    <label for={`answer-${question}-${index}`} data-key={index}>
+                        {answer}
+                    </label>
+                </div>
+            ))}
+        </div>
+    </form>
+</div>
+
+
+<style>
+   
+
+    h4 { 
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        color: black;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 2rem auto 2rem auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        box-shadow: 0 0 10px #000;
+    }
+
+   .question-container {
+        width: 100%;
+        margin: 0.5rem auto 0 auto;
+        justify-content: center;
+        cursor: pointer;
+    
+   }
+
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100dvh;
+    }
+</style>

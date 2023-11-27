@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro"
+import QuizzComponent from "../components/QuizzComponent.astro";
+
+---
+<Layout title="Quizz">
+    <div class="main_container">
+        <div class="title-container">
+            <h1>
+                <span>
+                    Quizz :
+                </span>
+                Besoin d'un dév ? - ☑️
+            </h1>
+        </div>
+    <div class="mx-4 px-4 sm:mx-auto">
+        <QuizzComponent
+        question="Votre projet est-il défini ?"
+        answers={["Oui", "non", "Je ne suis pas sûr"]}
+        correctAnswer="Oui"
+        
+        />
+
+        <QuizzComponent
+        question="Un cahier des charges est-il défini ?"
+        answers={["Oui", "Non", "Pas encore"]}
+        correctAnswer="Oui"
+        
+        />
+
+        <QuizzComponent
+        question="Est-ce que la date de livraison est définie ?"
+        answers={["Oui", "Non", "Pas encore"]}
+        correctAnswer="Rome"
+        
+        />
+
+        <QuizzComponent
+        question="Mon buget est-il défini et en accord avec mes objectifs ?"
+        answers={["Oui", "Non", "Partiellement"]}
+        correctAnswer="Oui"
+        
+        />
+    </div>
+
+    <div class="message-container">
+        <div class="message">
+            <div class="emoji">
+                emoji
+            </div>
+            <div class="message-text">
+                message
+            </div>
+        </div>
+
+</div>
+</div>
+</Layout>
+
+<style>
+     .main_container h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 10px #000;
+    }
+    .title-container{
+        padding-top: 6rem;
+    }
+</style>
