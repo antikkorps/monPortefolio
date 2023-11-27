@@ -12,9 +12,9 @@ import QuizzComponent from "../components/QuizzComponent.astro";
                 </span>
                 Besoin d'un dév ? - ☑️
             </h1>
-            <p class="text-white text-center mt-2"> Voilà quelques questions pour vous aider à savoir si vous avez besoin ou non d'un développeur web</p>
+            <p class="text-white text-center mt-2 px-4"> Voilà quelques questions pour vous aider à savoir si vous avez besoin ou non d'un développeur web</p>
         </div>
-    <form action="" class="mx-4 px-4 sm:mx-auto">
+    <form action="" class="quizz-form mx-4 px-4 sm:mx-auto">
         <QuizzComponent
         question="Votre projet est-il défini ?"
         answers={["Oui", "non", "Je ne suis pas sûr"]}
@@ -32,7 +32,7 @@ import QuizzComponent from "../components/QuizzComponent.astro";
         <QuizzComponent
         question="Est-ce que la date de livraison est définie ?"
         answers={["Oui", "Non", "Pas encore"]}
-        correctAnswer="Rome"
+        correctAnswer="Oui"
         
         />
 
@@ -42,33 +42,48 @@ import QuizzComponent from "../components/QuizzComponent.astro";
         correctAnswer="Oui"
         
         />
-        <button type="submit" class="button_primary flex justify-center text-2xl text-center mx-auto my-6">Envoyer mes réponses</button>
+        <button type="submit" class="form_button">Valider mes réponses</button>
     </form>
 
-    <div class="message-container">
-        <div class="message">
-            <div class="emoji">
-                emoji
-            </div>
-            <div class="message-text">
-                message
-            </div>
+        <div class="message-container">
+            
+            <div class="message py-5">
+                <p>cliquez sur <strong>valider</strong> pour voir les <strong>résultats</strong></p>
+                <div class="mark">
+                    emoji
+                </div>
+                <div class="message-text">
+                    message
+                </div>
         </div>
 
 </div>
 </div>
 </Layout>
 
+
+<script src="../components/QuizzFunctions.js"></script>
+
+
 <style>
+    h1 span {
+        font-weight: 900;
+    }
      .main_container h1 {
         font-size: 3rem;
-        font-weight: 700;
         text-align: center;
         color: #fff;
-        text-shadow: 0 0 10px #000;
     }
+    
     .title-container{
         padding-top: 6rem;
     }
-  
+    
+    .message-container{
+        margin: 3rem auto;
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+        max-width: 35rem;
+  }
 </style>
