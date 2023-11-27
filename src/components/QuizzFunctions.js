@@ -44,7 +44,7 @@ function showResults(results) {
   switch (numberOfCorrectAnswers) {
     case 4:
       titleResult.textContent =
-        "La prochaine étape est bien de faire intervenir un développeur !"
+        "🚀 La prochaine étape est bien de faire intervenir un développeur ! 🚀"
       markResult.textContent = "4/4"
       helpResult.textContent =
         "Et ça tombe bien je suis développeur ! Envoyez-moi un message"
@@ -53,7 +53,7 @@ function showResults(results) {
       instructionsBeforeResult.style.display = "none"
       break
     case 3:
-      titleResult.textContent = "Très bonne nouvelle !"
+      titleResult.textContent = "✅ Très bonne nouvelle ! ✅"
       markResult.textContent = "3/4"
       helpResult.textContent = "Un dernier effort et votre projet aboutira !"
       markResult.style.display = "block"
@@ -61,7 +61,7 @@ function showResults(results) {
       instructionsBeforeResult.style.display = "none"
       break
     case 2:
-      titleResult.textContent = "C'est super la moitié du chemin est fait !"
+      titleResult.textContent = "😅 C'est super la moitié du chemin est fait ! 😅"
       markResult.textContent = "2/4"
       helpResult.textContent = "Je peux vous aider à aller plus loin !"
       markResult.style.display = "block"
@@ -69,20 +69,22 @@ function showResults(results) {
       instructionsBeforeResult.style.display = "none"
       break
     case 1:
-      titleResult.textContent = "Nous avons une bonne base de travail !"
+      titleResult.textContent = "🤯 Nous avons une bonne base de travail ! 🤯"
       markResult.textContent = "1/4"
       helpResult.textContent = "On s'y met quand ?"
       markResult.style.display = "block"
       helpResult.style.display = "block"
       instructionsBeforeResult.style.display = "none"
       break
-    default:
-      titleResult.textContent = "On est au début de votre projet !"
+    case 0:
+      titleResult.textContent = "😋 On est au début de votre projet ! 😋"
       markResult.textContent = "0/4"
       helpResult.textContent = "C'est une bonne nouvelle, rencontrons-nous !"
       markResult.style.display = "block"
       helpResult.style.display = "block"
       instructionsBeforeResult.style.display = "none"
       break
+    default:
+      titleResult.textContent = "😱 Ah ça n'était pas prévu ! 😱"
   }
 }
