@@ -12,8 +12,9 @@ import QuizzComponent from "../components/QuizzComponent.astro";
                 </span>
                 Besoin d'un dév ? - ☑️
             </h1>
+            <p class="text-white text-center mt-2"> Voilà quelques questions pour vous aider à savoir si vous avez besoin ou non d'un développeur web</p>
         </div>
-    <div class="mx-4 px-4 sm:mx-auto">
+    <form action="" class="mx-4 px-4 sm:mx-auto">
         <QuizzComponent
         question="Votre projet est-il défini ?"
         answers={["Oui", "non", "Je ne suis pas sûr"]}
@@ -41,7 +42,8 @@ import QuizzComponent from "../components/QuizzComponent.astro";
         correctAnswer="Oui"
         
         />
-    </div>
+        <button type="submit" class="button_primary flex justify-center text-2xl text-center mx-auto my-6">Envoyer mes réponses</button>
+    </form>
 
     <div class="message-container">
         <div class="message">
@@ -68,4 +70,5 @@ import QuizzComponent from "../components/QuizzComponent.astro";
     .title-container{
         padding-top: 6rem;
     }
+  
 </style>

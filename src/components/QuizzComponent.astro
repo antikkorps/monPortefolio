@@ -16,7 +16,7 @@ const { emoji, message } = Astro.props
 ---
 
 <div class="form-container">
-    <form action="" class="quizz-form">
+    <div class="quizz-form">
         <div class="question-block">
             <h4>
                 { question }
@@ -37,7 +37,8 @@ const { emoji, message } = Astro.props
                 </div>
             ))}
         </div>
-    </form>
+        
+    </div>
 </div>
 
 
