@@ -27,4 +27,9 @@
   .code {
     @apply bg-fuchsia-100 text-fuchsia-900 font-mono text-xl px-2 py-1 rounded;
   }
+
+  /* TITLE RESULTS*/
+  .title_results {
+    @apply text-2xl text-center font-bold text-fuchsia-600;
+  }
 }
