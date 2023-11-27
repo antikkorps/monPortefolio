@@ -17,7 +17,9 @@
   .form_button {
     @apply button_primary flex justify-center text-2xl text-center mx-auto my-6;
   }
-
+  .big_cta {
+    @apply button_primary text-xl sm:text-3xl text-center font-bold mx-auto py-4 px-4 w-full sm:w-1/2;
+  }
   /* LINKS ON HOVER */
   .menu_text {
     @apply text-white hover:text-fuchsia-600;
