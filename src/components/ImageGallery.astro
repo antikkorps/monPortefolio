@@ -1,31 +1,27 @@
 ---
-import HtmlLogo from "/src/images/logos/html.png"
-import Css3 from "/src/images/logos/css-3.png"
 import Nextjs from "/src/images/logos/Next.webp"
 import Nuxtjs from "/src/images/logos/Nuxt.jpg"
 import Nestjs from "/src/images/logos/Nest.svg"
 import Nodejs from "/src/images/logos/NodeJS.jpg"
+import Laravel from "/src/images/logos/laravel.png"
 import Vuejs from "/src/images/logos/Vue.png"
 import Postgre from "/src/images/logos/Postgresql2.png"
 import MySQL from "/src/images/logos/mysql.png"
 import Reactjs from "/src/images/logos/React.png"
-import Laravel from "/src/images/logos/laravel.jpg"
-import JSlogo from "/src/images/logos/jslogo.webp"
+
 ---
 
 <h2 class="text-3xl text-center text-white py-5">Mes technologies de prédilection</h2>
+
 <div class="image-gallery py-5 my-10">
 
-    <img class="rounded-md" src={HtmlLogo.src} alt="html logo">
-    <img class="rounded-md" src={Css3.src} alt="css3 logo">
-    <img class="rounded-md" src={JSlogo.src} alt="MySQL logo">
     <img class="rounded-md" src={Nextjs.src} alt="Nextjs logo">
     <img class="rounded-md" src={Nuxtjs.src} alt="Nuxtjs logo">
     <img class="rounded-md" src={Nestjs.src} alt="Nestjs logo">
     <img class="rounded-md" src={Nodejs.src} alt="Nodejs logo">
+    <img class="rounded-md" src={Laravel.src} alt="Laravel logo">
     <img class="rounded-md" src={Vuejs.src} alt="Vuejs logo">
-    <img class="rounded-md" src={Reactjs.src} alt="Vuejs logo">
-    <img class="rounded-md" src={Laravel.src} alt="Postgresql logo">
+    <img class="rounded-md" src={Reactjs.src} alt="React logo">
     <img class="rounded-md" src={Postgre.src} alt="Postgresql logo">
     <img class="rounded-md" src={MySQL.src} alt="MySQL logo">
 
@@ -50,7 +46,7 @@ import JSlogo from "/src/images/logos/jslogo.webp"
     }
 
     .image-gallery:has(img:hover) > img:not(:hover) {
-        scale: 0.8;
+        scale: 0.7;
         opacity: 0.7;
     }
 </style>
