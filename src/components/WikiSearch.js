@@ -3,6 +3,8 @@
 const form = document.querySelector("form")
 const input = document.querySelector("input")
 const errorMsg = document.querySelector(".error-msg")
+const loader = document.querySelector(".loader")
+const resultsDisplay = document.querySelector(".results-display")
 
 form.addEventListener("submit", handleSubmit)
 
@@ -14,23 +16,28 @@ function handleSubmit(e) {
     return
   } else {
     errorMsg.textContent = ""
+    loader.style.display = "block"
+    resultsDisplay.textContent = ""
     wikipediaApiCall(inputValue)
   }
 }
 
 async function wikipediaApiCall(searchInput) {
-  const response = await fetch(
-    `https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=${searchInput}`
-  )
-  const data = await response.json()
-  console.log(data)
-  displayResults(data)
+  try {
+    const response = await fetch(
+      `https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=${searchInput}`
+    )
+    const data = await response.json()
+    console.log(data)
+    displayResults(data)
+  } catch (error) {
+    errorMsg.textContent = `${error}`
+    loader.style.display = "none"
+    console.log(error)
+  }
 }
 
 function displayResults(data) {
-  const resultsDisplay = document.querySelector(".results-display")
-  const errorMsg = document.querySelector(".error-msg")
-
   // Clear previous results
   resultsDisplay.innerHTML = ""
 
