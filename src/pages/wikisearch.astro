@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro"
+import WikipediaLogo from "../images/logos/Wikipedia_logo.svg"
+
+---
+
+<Layout title="wikisearch">
+    
+
+<main>
+
+    <img src={WikipediaLogo.src} class="illustration_wikisearch" alt="logo Wikipedia">
+
+    <h1 class="text-3xl w-full text-center relative top-60 px-4 text-white">Recherche rapide <span class="font-extrabold">Wikipedia</span></h1>
+    <div class="w-full text-center relative top-80">
+        <form action="" class="mx-5">
+        
+            <input type="text" class="search-input" placeholder="Rechercher sur Wikipedia">
+        </form>
+        <p class="error-msg"></p>
+        <div class="results-display flex flex-col pb-5">
+        <div class="loader mt-6 justify-center mx-auto">
+        </div>
+    </div>
+    </div>
+</main>
+
+<script src="../components/WikiSearch.js"></script>
+</Layout>
+
+<style>
+    .illustration_wikisearch {
+        position: relative;
+        top: 10rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .search-input {
+        width: 100%;
+        max-width: 600px;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .error-msg {
+        color: red;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .results-display {
+        max-width: 33rem;
+        margin: 0 auto;
+        padding: 3rem 0;
+        justify-content: center;
+    }
+
+</style>

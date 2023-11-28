@@ -23,11 +23,11 @@ function handleSubmit(event, form) {
     if (radioButton.value === responses[index]) {
       results.push(true)
 
-      const emoji = document.createElement("span")
-      emoji.textContent = emojis[index]
-      emoji.classList.add("emoji")
-      radioButton.parentNode.appendChild(emoji)
-    } else {
+      // const emoji = document.createElement("span")
+      //   emoji.textContent = emojis[index]
+      //   emoji.classList.add("emoji")
+      //   radioButton.parentNode.appendChild(emoji)
+      // } else {
       results.push(false)
     }
   })
@@ -61,7 +61,7 @@ function showResults(results) {
       instructionsBeforeResult.style.display = "none"
       break
     case 2:
-      titleResult.textContent = "😅 C'est super la moitié du chemin est fait ! 😅"
+      titleResult.textContent = "😅 C'est super! la moitié du chemin est fait ! 😅"
       markResult.textContent = "2/4"
       helpResult.textContent = "Je peux vous aider à aller plus loin !"
       markResult.style.display = "block"
