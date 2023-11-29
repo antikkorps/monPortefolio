@@ -1,0 +1,142 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+
+    <Layout title="gradient">
+        
+        <div class="container sm:w-1/3">
+            <div class="col">
+                <div class="title">
+                    <h1 class="main_title title_results">Gradient Generator</h1>
+                </div>
+                <div class="input-group flex">
+                    <label for="color1">#FF5F6D</label>
+                    <input type="color" id="color1" name="color1" value="#ff0000">
+                </div>
+                <div class="input-group flex">
+                    <label for="color2">#FFC371</label>
+                    <input type="color" id="color2" name="color2" value="#0000ff">
+                    </div>
+                <div class="range-group flex flex-col">
+                    <label for="orientation">
+                        <span>Orientation:</span>
+                        <span class="orientation-value">90
+                    </label>
+                    <input type="range" id="orientation" name="orientation" value="180" min="0" max="360" class="range-input">
+                </div>
+                <div class="buttons-container flex justify-center   ">
+                    <button class="button_primary copy-btn border" type="button">Copier</button>
+                    <button class="button_secundary random-btn" type="button">Random</button>
+                </div>
+
+                <script src="/src/components/GradientChanger.js"></script>
+    </Layout>
+
+
+    <style>
+.container {
+    max-width: 30rem;
+    height: 100dvh;
+    margin: 0 auto;
+}
+
+.main_title {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+}
+.input-group {
+    width: 100%;
+    border-radius: 1rem;
+    outline: 0.2rem solid #f1f1f1;
+    margin: 2rem 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.input-group input {
+    outline: none;
+    cursor: pointer;
+}
+
+.input-group label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+
+.range-group {
+    margin: 2rem 0;
+}
+
+.range-group label {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    max-width: 15rem;
+    background: #f1f1f1;
+    border-radius: 0.2rem;
+    font-weight: 500;
+}
+
+input[type="range"] {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.copy-btn {
+    position: relative;
+}
+
+.copy-btn::after {
+    content: "Copié !";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+    color: black;
+    bottom: -75%;
+    left: 50%;
+    transform: translate(-50%, 2rem);
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.copy-btn.active::after {
+    animation: fade-out 1s ease-out forwards;
+    
+}
+
+@keyframes fade-out {
+    0% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 1.5rem);
+    
+    }
+    
+}
+
+.random-btn {
+    margin-left: 1rem;
+}
+    </style>
+    
