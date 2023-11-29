@@ -34,4 +34,9 @@
   .title_results {
     @apply text-2xl text-center font-bold text-fuchsia-600;
   }
+
+  /* LINKS */
+  .links_basics {
+    @apply text-blue-300 hover:text-blue-600;
+  }
 }

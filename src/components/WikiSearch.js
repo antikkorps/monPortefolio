@@ -56,7 +56,7 @@ function displayResults(data) {
       card.innerHTML = `
       <div class="py-5 flex flex-col">
           <h3 class="result-title text-2xl text-blue-300 hover:text-blue-600 underline decoration-3 text-start">
-          <a href=${url} class="text-blue-300 hover:text-blue-600" target="_blank">${element.title}</a></h3>
+          <a href=${url} class="links_basics" target="_blank">${element.title}</a></h3>
           <a href=${url} class="result-link text-start text-green-300 hover:text-green-600 decoration" target="_blank">${url}</a>
           <span class="result-snippet text-start text-white">${element.snippet}</span>
           </div>
