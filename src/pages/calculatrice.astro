@@ -1,0 +1,120 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Calculatrice">
+    <div class="container">
+    <div class="calculator">
+        <div class="display">
+            
+                <p class="calculation">95+18</p>
+                <p class="results">113</p>
+            
+        </div>
+        <div class="grid">
+            <button data-action="c">C</button>
+            <button data-action="ce">CE</button>
+            <button data-action="+">+</button>
+            <button data-action="7">7</button>
+            <button data-action="8">8</button>
+            <button data-action="9">9</button>
+            <button data-action="-">-</button>
+            <button data-action="4">4</button>
+            <button data-action="5">5</button>
+            <button data-action="6">6</button>
+            <button data-action="*">x</button>
+            <button data-action="1">1</button>
+            <button data-action="2">2</button>
+            <button data-action="3">3</button>
+            <button data-action="/">/</button>
+            <button data-action="0">0</button>
+            <button data-action=".">.</button>
+            <button data-action="=">=</button>
+        </div>
+    </div>
+</div>
+    <script src="/src/components/js/calculatrice.js"></script>
+</Layout>
+
+<style>
+.calculator {
+    max-width: 30rem;
+    margin: 8rem auto 0;
+    background: #101a22;
+    border-radius: 2rem;
+    padding: 2rem 2rem 4rem 2rem ;
+    color: #f1f1f1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+    font-weight: 200;
+    padding: 4rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    border: 0.2rem solid rgba(97, 97, 97);
+    background: #23303b;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+    inset 0 0 0.5rem #191919,
+    inset 0 -0.5 1rem #06121d;
+
+}
+
+.calculation, .results {
+    position: absolute;
+    right: 2rem;
+}
+
+.calculation {
+    font-size: 1.5rem;
+    font-weight: 100;
+    top: 0.5rem;
+    opacity: 0.5;
+}
+
+.results {
+    font-size: 2.5rem;
+    font-weight: 200;
+    bottom: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 3rem;
+    gap: 3rem;
+    align-items: center;
+
+}
+
+.grid button {
+    border: none; 
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    color: #f1f1f1;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    background: #101a22;
+    box-shadow: 
+    0 4px 8px #000000,
+    0px -1px 6px #41484e;
+
+
+}
+
+button[data-action="c"]{
+    grid-column: span 2;
+}
+
+.grid button[data-action="="]{
+    grid-column: span 2;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: x-large;
+    color:  #101a22;
+    background-image: linear-gradient(45deg, #fcc359, #f3bf61);
+}
+</style>
