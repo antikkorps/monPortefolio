@@ -172,7 +172,6 @@ function customEval(calculation) {
   }
 }
 
-// 5500+5065465564+600
 function getIndexes(operatorIndex, calculation) {
   let rightOperand = ""
   let lastRightOperandCharacter
