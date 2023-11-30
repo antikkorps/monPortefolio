@@ -5,13 +5,16 @@
 @layer components {
   /* BUTTONS */
   .button_primary {
-    @apply bg-fuchsia-600 hover:bg-fuchsia-800 text-white font-bold py-2 px-4 rounded hover:rounded-xl ease-in-out duration-200;
+    @apply bg-fuchsia-600 hover:bg-fuchsia-800 text-white hover:text-white font-bold py-2 px-4 rounded hover:rounded-xl ease-in-out duration-200;
   }
 
   .button_secundary {
     @apply bg-white hover:bg-slate-200 text-black font-bold py-2 px-4 rounded hover:rounded-xl ease-in-out duration-200;
   }
 
+  .button_back {
+    @apply button_primary w-full sm:w-1/2 mt-5 flex justify-center mx-auto border;
+  }
   .btn-ghost {
     @apply text-white hover:bg-fuchsia-500 hover:text-gray-500;
   }

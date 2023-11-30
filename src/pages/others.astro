@@ -3,18 +3,18 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="les autres projets">
-    <div class="container">
+    <div class="container" transition:animate="slide">
     <h1 class="title_results mb-5 mx-auto">Les autres projets</h1>
 
     
-    <p class="text-white mb-4">Voici une liste de projets que j'ai réalisé ou auxquels j'ai participé.</p>
+    <p class="text-white mb-4">Voici une liste de projets que j'ai réalisé :</p>
     
-    <ul>
-        <li><a href="/wikisearch" class="links_basics">wikisearch</a></li>
-        <li><a href="/gradient" class="links_basics">Gradient Generator</a></li>
-        <li><a href="/partiules" class="links_basics">Particules Animées en JS</a></li>
-        <li><a href="/calculatrice" class="links_basics">Calculatrice en JS</a></li>
-        </ul>
+    
+        <a href="/wikisearch" class="links_basics mb-3">wikisearch</a>
+        <a href="/gradient" class="links_basics mb-3">Gradient Generator</a>
+        <a href="/particules" class="links_basics mb-3">Particules Animées en JS</a>
+        <a href="/calculatrice" class="links_basics mb-3">Calculatrice en JS</a>
+       
     </div>
 
 </Layout>
