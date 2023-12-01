@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="buttons">
-    <div class="container flex">
+    <div class="container flex" transition:animate="slide">
 
         <a href="#" class=" slideIn justify-center mx-auto mb-5">Hover Me</a>
         <a href="#" class=" stretch justify-center mx-auto mb-5">Hover Me</a>
@@ -13,6 +13,9 @@ import Layout from "../layouts/Layout.astro"
         <a href="#" class=" circularSwapping justify-center mx-auto mb-5">Hover Me</a>
         <a href="#" class=" layerSwapping justify-center mx-auto mb-5">Hover Me</a>
 
+        <div class="next w-full flex">
+            <a href="/buttons-2" class="links_basics text-center mx-auto mt-5 mb-5">La suite</a>
+        </div>
     </div>
 </Layout>
 
