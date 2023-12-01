@@ -8,6 +8,7 @@ import Layout from "../layouts/Layout.astro"
         <a href="#" class=" creative3 justify-center mx-auto mb-5"><span></span>Hover Me</a>
         <a href="#" class=" openingHoverEffect justify-center mx-auto mb-5"><span></span>Hover Me</a>
         <a href="#" class=" firstLetterRotating justify-center mx-auto mb-5"><span>H</span>over Me</a>
+        <a href="#" class=" FourBordersGrowing justify-center mx-auto mb-5"><span></span>Hover Me</a>
         
 
         <div class="next w-full flex">
@@ -189,6 +190,78 @@ import Layout from "../layouts/Layout.astro"
     a.firstLetterRotating:hover span:before{
         font-size: 5.5rem;
         transform: translate(-80%, -45%) rotate(360deg);
+    }
+
+    /*FourBordersGrowing*/
+    a.FourBordersGrowing { 
+        text-decoration: none;
+        text-transform: uppercase;
+        background: transparent;
+        color: white;
+        border: none;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: 0.2rem;
+        padding: 1rem 4rem;
+        position: relative;
+        transition: all 0.2s;
+        overflow: hidden;
+    }
+    a.FourBordersGrowing:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: white;
+        transition: all 0.5s;
+    }
+    a.FourBordersGrowing:hover:before{
+        left: 0;
+    }
+
+    a.FourBordersGrowing:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 4px;
+        background: white;
+        transition: all 0.5s;
+    }
+    a.FourBordersGrowing:hover:after{
+        right: 0;
+    }
+
+    a.FourBordersGrowing span:before{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: white;
+        transition: all 0.5s;
+    }
+    a.FourBordersGrowing:hover span:before{
+        top: 0;
+    }
+
+    a.FourBordersGrowing span:after{
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        width: 4px;
+        height: 100%;
+        background: white;
+        transition: all 0.5s;
+    }
+    a.FourBordersGrowing:hover span:after{
+        bottom: 0;
     }
 
 </style>
