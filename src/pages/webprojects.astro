@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Projets Web">
+<div class="py-20">
+    <h2 class="text-3xl text-center text-white py-5">Mes projets web</h2>
+
+    <div class=" grid md:grid-cols-4 gap-5 w-full sm:w-1/2 px-10 sm:mx-auto pt-5">
+        <div class="cell sm:col-start-1 sm:col-span-2 rounded-md">1</div>
+        <div class="cell rounded-md">2</div>
+        <div class="cell rounded-md">3</div>
+        <div class="cell rounded-md">4</div>
+        <div class="cell rounded-md">5</div>
+        <div class="cell rounded-md sm:col-start-3 sm:col-span-2">6</div>
+        <div class="cell rounded-md sm:col-start-1 sm:col-span-2">7</div>
+        <div class="cell rounded-md">8</div>
+        <div class="cell rounded-md">9</div>
+
+    </div>
+    
+</div>
+</Layout>
+
+<style>
+    .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #000;
+        height: 15rem;
+        width: 100%;
+    }
+</style>
