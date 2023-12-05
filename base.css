@@ -48,6 +48,11 @@
     @apply text-blue-300 hover:text-blue-600;
   }
 
+  /* TEXT EMPHASIS */
+  .text_emphasis {
+    @apply underline decoration-fuchsia-500 text-fuchsia-500 text-2xl font-semibold;
+  }
+
   /* CONTAINER */
   .container {
     @apply mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col justify-center w-full sm:w-1/3;

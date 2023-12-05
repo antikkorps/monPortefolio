@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Competences  from "../components/Competences.astro"
 ---
 
 <Layout title="A propos" />
@@ -8,26 +9,33 @@ import Layout from "../layouts/Layout.astro"
       <h1 class="text-white text-2xl">A propos</h1>
       
     </div>
-    <p class="w-full text-center my-5 text-white">Et là il va falloir que je trouve <a href="" class="underline decoration-fuchsia-500 text-fuchsia-500 text-2xl font-semibold">quoi</a> et comment le raconter</p>
   
 
     <section class="container mx-auto my-4">
       <h2 class="text-2xl font-bold mb-4 text-white">À propos de moi</h2>
-      <p class="text-white">J'exerce depuis 2 ans le métier de développeur web</p>
-      <p class="text-white">Je suis issu d'une reconversion professionnelle mais passionné depuis de nombreuses années par les technologies du web.</p>
-      <p class="text-white">J'accompagne les entreprises de toutes tailles dans leurs projets web ou la création d'outils digitaux</p>
-  </section>
+      <p class="text-white mb-2"> Je m'appelle <span class="text_emphasis ml-3">Franck</span> ! <span class="text-3xl mr-2">👋</span></p>
+      <p class="text-white mb-2">J'exerce depuis 2 ans le métier de développeur web.</p>
+      <p class="text-white mb-2">Je suis issu d'une reconversion professionnelle.</p>
+      <p class="text-white mb-2">J'ai décidé de transformer ma passion pour les technologies du web en métier. 🥰</p>
+      <p class="text-white mb-2">J'ai donc suivi une formation en cours du soir pendant deux ans.</p>
+      <p class="text-white">Aujourd'hui, j'accompagne les entreprises de toutes tailles dans leurs projets web ou la création d'outils digitaux.</p>
+      <span class="text-4xl mt-4">🚀🚀🚀</span>
+    </section>
 
-  <section class="bg-gray-200 py-8">
+  <section class="bg-gray-200 py-2">
       <div class="container mx-auto">
           <h2 class="text-2xl font-bold mb-4">Mon Expérience</h2>
-          <!-- Ajoute ici des éléments pour détailler ton expérience -->
-      </div>
+          <p>J'ai passé deux ans en temps que développeur dans une entreprise de conseil et formation.</p>
+          <p>J'y étais formateur à l'origine puis au terme de ma formation, j'ai intégré l'équipe tech.</p>
+          <p>J'ai eu l'occasion de travailler en équipe, en méthode Agile, et au travers d'une gestion de projet en méthode Scrum</p>
+          <p>A mon compte depuis février 2024, je travaille sur des projets web ainsi que sur de l'accompagnement à la transformation digitale des entreprises</p>
+        </div>
   </section>
 
-  <section class="container mx-auto my-8">
-      <h2 class="text-2xl font-bold mb-4">Mes Compétences</h2>
-      <p></p>
+  <section class="container mx-auto my-4">
+      <h2 class="text-2xl text-white font-bold mb-4">Mes Compétences</h2>
+      <Competences />
+      
   </section>
 
 
