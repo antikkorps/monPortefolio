@@ -1,66 +1,64 @@
 ---
+import Webprojects from "../components/WebprojectCard.astro"
 import Layout from "../layouts/Layout.astro"
 import MaFormationImmo  from "../images/maformationimmo.png"
 import SaveUsLife from "../images/saveusLife.png"
+import SafetyCaseSolutions from "../images/safetyCaseSolutions.png"
+import LeSiteDeLasso from "../images/lesitedelasso.png"
 ---
 
 <Layout title="Projets Web">
 <div class="py-20 w-full" transition:animate="slide">
     <h2 class="text-3xl text-center text-white py-5">Mes projets web</h2>
 
-    <div class="flex flex-row flex-wrap w-full sm:w-2/6 px-10 sm:mx-auto pb-5 justify-center">
-        <div class="rounded-md overflow-hidden my-5">
-            
-            <img src={MaFormationImmo.src} alt="ma formation immo" class="double rounded-md">
-            <span></span>
-               
-        </div>
-        
-        <div class="rounded-md overflow-hidden my-5">
-            <img src={SaveUsLife.src} alt="" class="double">
-        </div>
-        <div class="rounded-md overflow-hidden my-5">
-            <img src={SaveUsLife.src} alt="" class="double">
-        </div>
-        <div class="rounded-md overflow-hidden my-5">
-            <img src={SaveUsLife.src} alt="" class="double">
-        </div>
+        <Webprojects
+        image={MaFormationImmo.src}
+        title="MaFormationImmo"
+        description="Un site autour de l'offre de formation en immobilier"
+        details="Réalisé à partir des maquettes figma du service communication de l'entreprise"
+        stack="Wordpress && Bootstrap"
+        link="https://maformationimmo.info/"
+        src={MaFormationImmo.src}
 
-    </div>
-    
+        />
+
+        <Webprojects
+        image={SaveUsLife.src}
+        title="SaveUsLife"
+        description="Un site pour un magazine sur la thématique de l'environnement"
+        details="Réalisé à partir du cahier des charges du client et de ses impératifs de temps"
+        stack="Wordpress && Bootstrap"
+        link="http://save-us.life"
+        src={SaveUsLife.src}
+
+        />
+
+        <Webprojects
+        image={SafetyCaseSolutions.src}
+        title="Safety Case Solutions"
+        description="Le site d'une entreprise proposant des malettes de sécurité"
+        details="Un site e-commerce pour une entreprise proposant des malettes de sécurité personnalisées"
+        stack="Wordpress && Woocommerce"
+        link="https://safety-case-solutions.com/"
+        src={SafetyCaseSolutions.src}
+
+        />
+
+        <Webprojects
+        image={LeSiteDeLasso.src}
+        title="Le site de l'asso"
+        description="Un site pour une association fictive"
+        details="Réalisé dans le cadre de ma formation. Il s'agit d'un quatre page vitrine pour une association"
+        stack="html && Bootstrap"
+        link="https://lesitedelasso.netlify.app/"
+        src={LeSiteDeLasso.src}
+
+        />
+
 </div>
+
 </Layout>
 
 <style>
-    .double {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.8;
-        transition: all 0.3s linear;
-    }
-    .double:hover {
-        opacity: 1;
-        transform: scale(1.4) rotate(-6deg);
-        transition: transform 0.5s;
-    }
-    .double:before {
-        content: "";
-        position: relative;
-        top: 0;
-        left: ;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        background: red;
-    }
-    .cell {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-        border: 1px solid #000;
-        height: 15rem;
-        width: 100%;
-    }
+    
 </style>
