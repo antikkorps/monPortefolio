@@ -1,5 +1,5 @@
 ---
-import Webprojects from "../components/WebprojectCard.astro"
+import Webproject from "../components/WebprojectCard.astro"
 import Layout from "../layouts/Layout.astro"
 import MaFormationImmo  from "../images/maformationimmo.png"
 import SaveUsLife from "../images/saveusLife.png"
@@ -13,8 +13,7 @@ import NDF from "../images/nouvellesdonnesformation.png"
 <div class="py-20 w-full" transition:animate="slide">
     <h2 class="text-3xl text-center text-white py-5">Mes projets web</h2>
 
-        <Webprojects
-        image={MaFormationImmo.src}
+        <Webproject
         title="MaFormationImmo"
         description="Un site autour de l'offre de formation en immobilier"
         details="Réalisé à partir des maquettes figma du service communication de l'entreprise"
@@ -24,8 +23,7 @@ import NDF from "../images/nouvellesdonnesformation.png"
 
         />
 
-        <Webprojects
-        image={SaveUsLife.src}
+        <Webproject
         title="SaveUsLife"
         description="Un site pour un magazine sur la thématique de l'environnement"
         details="Réalisé à partir du cahier des charges du client et de ses impératifs de temps"
@@ -35,8 +33,7 @@ import NDF from "../images/nouvellesdonnesformation.png"
 
         />
 
-        <Webprojects
-        image={SafetyCaseSolutions.src}
+        <Webproject
         title="Safety Case Solutions"
         description="Le site d'une entreprise proposant des malettes de sécurité"
         details="Un site e-commerce pour une entreprise proposant des malettes de sécurité personnalisées"
@@ -46,8 +43,7 @@ import NDF from "../images/nouvellesdonnesformation.png"
 
         />
 
-        <Webprojects
-        image={LeSiteDeLasso.src}
+        <Webproject
         title="Le site de l'asso"
         description="Un site pour une association fictive"
         details="Réalisé dans le cadre de ma formation. Il s'agit d'un quatre page vitrine pour une association"
@@ -57,8 +53,7 @@ import NDF from "../images/nouvellesdonnesformation.png"
 
         />
 
-        <Webprojects
-        image={BoxOfficeWorld.src}
+        <Webproject
         title="Boxoffice-world"
         description="Boxoffice-world est un site qui récupère les statistiques des films et séries"
         details="Il permet par un cron-job de récupérer les détails du box-office mondial et de les afficher sur le site"
@@ -68,8 +63,7 @@ import NDF from "../images/nouvellesdonnesformation.png"
 
         />
 
-        <Webprojects
-        image={NDF.src}
+        <Webproject
         title="Nouvelles Donnes Formation"
         description="Un site pour une entreprise de formation"
         details="Un site vitrine pour une entreprise de formation qui n'a pas été finalisé suite à la restructuration du groupe"
@@ -77,6 +71,7 @@ import NDF from "../images/nouvellesdonnesformation.png"
         link="https://nouvellesdonnesformation.ndcampus.fr/"
         src={NDF.src}
 
+        />
 </div>
 
 </Layout>
