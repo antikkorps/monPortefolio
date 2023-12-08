@@ -1,0 +1,320 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="menu examples">
+    <div class="py-28 w-full">
+
+        <div>
+            <ul class="growingBorder">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="creativeBg mt-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="creativeSplitted pt-5">
+                <li><a href="#">Home
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a></li>
+                <li><a href="#">About
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a></li>
+                <li><a href="#">Services
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>    
+                </a></li>
+                <li><a href="#">Portfolio
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>    
+                </a></li>
+                <li><a href="#">Contact
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>    
+                </a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="creative2MovingBorders mt-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</Layout>
+
+<style>
+    /*grouwingBorder*/
+    ul.growingBorder {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ul.growingBorder li {
+        list-style: none;
+    }
+
+    ul.growingBorder li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        display: block;
+        padding: 1rem 2rem;
+        position: relative;
+    }
+
+    ul.growingBorder li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: .1rem;
+        top: 0;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+        transform-origin: left;
+    }
+
+    ul.growingBorder li a:hover:before {
+        transform: scaleX(1);
+    }
+
+    ul.growingBorder li a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: .1rem;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+        transform-origin: right;
+    }
+
+    ul.growingBorder li a:hover:after {
+        transform: scaleX(1);
+    }
+
+    /*creativeBg*/
+    .creativeBg {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .creativeBg li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 0.5rem 0.7rem;
+        margin: 0 0.7rem;
+        display: block;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .creativeBg li a:before {
+        content: "";
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        width: 1rem;
+        height: 1rem;
+        border: 3px solid tomato;
+        border-width: 0 0 3px 3px;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .creativeBg li a:after {
+        content: "";
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 1rem;
+        height: 1rem;
+        border: 3px solid tomato;
+        border-width: 3px 3px 0 0;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .creativeBg li a:hover {
+        color: tomato;
+    }
+
+    .creativeBg li a:hover:before {
+        bottom: -0.5rem;
+        left: -0.5rem;
+        opacity: 1;
+        transition: all 0.3s;
+        
+    }
+
+    .creativeBg li a:hover:after {
+        top: -0.5rem;
+        right: -0.5rem;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    /*creativeSplitted*/
+    ul.creativeSplitted {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul.creativeSplitted li a {
+        display: block;
+        text-align: center;
+        width: 10rem;
+        height: 2rem;
+        color: white;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    ul.creativeSplitted li a span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: tomato;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all 0.3s;
+    }
+
+    ul.creativeSplitted li a:hover span {
+        transform: scaleY(1);
+    }
+
+    ul.creativeSplitted li a span:nth-child(1) {
+        left: 0;
+        top: -10%;
+    }
+
+    ul.creativeSplitted li a span:nth-child(2) {
+        left: 25%;
+        top: -10%;
+        transition-delay: 0.15s;
+    }
+
+    ul.creativeSplitted li a span:nth-child(3) {
+        left: 50%;
+        top: -10%;
+        transition-delay: 0.3s;
+    }
+
+    ul.creativeSplitted li a span:nth-child(4) {
+        left: 75%;
+        top: -10%;
+        transition-delay: 0.45s;
+    }
+
+    /*creative2MovingBorders*/
+    ul.creative2MovingBorders {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul.creative2MovingBorders li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 0.5rem 0.7rem;
+        margin: 0 0.7rem;
+        display: block;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    ul.creative2MovingBorders li a:before {
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        left: 0rem;
+        width: 0;
+        border-bottom: 3px solid #00bcd4;
+        opacity: 0 ;
+        transition: all 0.3s;
+    }
+
+    ul.creative2MovingBorders li a:after {
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        width: 0;
+        border-bottom: 3px solid #f0f;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    ul.creative2MovingBorders li a:hover:before {
+        width: 50%;
+        opacity: 1;
+        transform: translateX(100%) ;
+        transition: all 0.3s;
+        
+    }
+
+    ul.creative2MovingBorders li a:hover:after {
+        width: 50%;
+        opacity: 1;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+
+</style>

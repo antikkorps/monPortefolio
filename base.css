@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+  .py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
   /* BUTTONS */
   .button_primary {
     @apply bg-fuchsia-600 hover:bg-fuchsia-800 text-white hover:text-white font-bold py-2 px-4 rounded hover:rounded-xl ease-in-out duration-200;
