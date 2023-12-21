@@ -8,6 +8,7 @@ import "bulma/css/bulma.css"
 import "/base.css"
 import Navbar from "../components/Navbar.astro"
 import { ViewTransitions } from 'astro:transitions';
+
 ---
 
 <!DOCTYPE html>
@@ -19,12 +20,17 @@ import { ViewTransitions } from 'astro:transitions';
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <Navbar />
     <slot />
     
     <script src="../components/js/scroll-tracker.js"></script>
+    <script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script is:inline>
+      AOS.init();
+    </script>
 
     <style is:global>
       :root {

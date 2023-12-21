@@ -4,70 +4,75 @@ import Card from "../components/Card.astro"
 import Citation from "../components/Citation.astro"
 import Hero from "../components/Hero.astro"
 import ImageGallery from "../components/ImageGallery.astro"
-import Greetings from "../components/Greetings.vue"
 import maformationImmo from "/src/images/maformationimmo.png"
 import lesitedelasso from "/src/images/lesitedelasso.png"
 import safetyCaseSolutions from "/src/images/safetyCaseSolutions.png"
 import saveusLife from "/src/images/saveusLife.png"
+import NeedDev from "../components/NeedDev.astro"
 ---
 
 <Layout title="Welcome to my Portfolio">
   
   <Hero/>
   <main>
-    <div class="my-5 py-5 w-full sm:w-1/2 flex flex-col justify-center mx-auto">
-      <h2 class="text-2xl sm:text-3xl font-bold text-white text-center">Besoin d'un développeur pour votre projet?</h2>
-      <p class="text-xl sm:text-2xl text-white text-center pb-4 my-4">Un simple clic sur le bouton ci-dessous vous permettra grâce à un quizz très simple de savoir où vous en êtes de votre projet</p>
-      <a href="/quizz"><h2 class="big_cta">Vous avez besoin d'un dev ?</h2></a>
-      
-    </div>
-    
+        
+    <NeedDev />
+
     <ImageGallery />
 
     <section class="card_section w-full py-5">
       <div role="list" class="sm:mx-auto flex flex-col md:flex-row justify-center items-center">
-        <Card
-          image={maformationImmo.src}
-          href="https://maformationimmo.info/"
-          title="MaformationImmo"
-          body="Une landing page autour de l'offre immo du client sur la base du maquettage fourni."
-          author="Franck"
-          tags={["wp", "cms"]}
-        />
-        <Card
-          image={saveusLife.src}
-          href="https://save-us.life/"
-          title="Save-Us"
-          body="Un magazine en ligne sur le thème de l'environment et de l'écologie."
-          author="Franck"
-          tags={["wp", "Paypal"]}
-        />
-        <Card
-          image={safetyCaseSolutions.src}
-          href="https://www.safety-case-solutions.com/"
-          title="SCS"
-          body="Un site e-commerce construit sur woocommerce avec produits variables"
-          author="Franck"
-          tags={["wp", "woocommerce"]}
-        />
-        <Card
-          image={lesitedelasso.src}
-          href="https://lesitedelasso.netlify.app/"
-          title="Le Site de l'asso"
-          body="Un projet réalisé lors de ma formation. Il utilise Bootstrap ❤️ et rien d'autre"
-          author="Franck"
-          tags={["bootstrap", "html"]}
+          <div data-aos="fade-up" data-aos-delay="100">
+          <Card
+            image={maformationImmo.src}
+            href="https://maformationimmo.info/"
+            title="MaformationImmo"
+            body="Une landing page autour de l'offre immo du client sur la base du maquettage fourni."
+            author="Franck"
+            tags={["wp", "cms"]}
+          />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <Card
+            image={saveusLife.src}
+            href="https://save-us.life/"
+            title="Save-Us"
+            body="Un magazine en ligne sur le thème de l'environment et de l'écologie."
+            author="Franck"
+            tags={["wp", "Paypal"]}
+          />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <Card
+            image={safetyCaseSolutions.src}
+            href="https://www.safety-case-solutions.com/"
+            title="SCS"
+            body="Un site e-commerce construit sur woocommerce avec produits variables"
+            author="Franck"
+            tags={["wp", "woocommerce"]}
+          />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400">
+          <Card
+            image={lesitedelasso.src}
+            href="https://lesitedelasso.netlify.app/"
+            title="Le Site de l'asso"
+            body="Un projet réalisé lors de ma formation. Il utilise Bootstrap ❤️ et rien d'autre"
+            author="Franck"
+            tags={["bootstrap", "html"]}
+          />
+        </div>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="300">
+        <Citation
+          author="John Woods"
+          citation="Codez toujours comme si la personne qui allait maintenir votre code était un violent psychopathe qui sait où vous habitez."
         />
       </div>
-      <Citation
-        author="John Woods"
-        citation="Codez toujours comme si la personne qui allait maintenir votre code était un violent psychopathe qui sait où vous habitez."
-      />
 
       
     </section>
     
-    <Greetings />
   </main>
 
 </Layout>

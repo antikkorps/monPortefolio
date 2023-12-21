@@ -11,7 +11,7 @@ import Layout from "../layouts/Layout.astro"
         <a href="#" class=" fourBordersGrowing justify-center mx-auto mb-5"><span></span>Hover Me</a>
         <a href="#" class=" twocuts justify-center mx-auto mb-5">Hover Me<span></span></a>
         <a href="#" class=" twoskewed justify-center mx-auto mb-5">Hover Me<span></span></a>
-        <a href="#" class=" animatedBorderNeon justify-center mx-auto mb-5">
+        <a href="#" class=" animatedBorderNeon justify-center mx-auto mb-20">
             <span></span>
             <span></span>
             <span></span>
@@ -379,5 +379,28 @@ import Layout from "../layouts/Layout.astro"
     }
 
     /*animatedBorderNeon*/
+    .animatedBorderNeon {
+        position: relative;
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: #03e9f4;
+        text-decoration: none;
+        text-transform: uppercase;        
+        border: none;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: 0.4rem;        
+        transition: all 0.2s;
+        overflow: hidden;
+    }
 
+    .animatedBorderNeon:hover {
+        background: #03e9f4;
+        color: #051130;
+        box-shadow: 0 0 5px #03e9f4,
+                    0 0 25px #03e9f4,
+                    0 0 50px #03e9f4,
+                    0 0 200px #03e9f4;
+    }
 </style>
