@@ -21,13 +21,13 @@ import { ViewTransitions } from 'astro:transitions';
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <Navbar />
+    <div class="scroll-tracker"></div>
     <slot />
     
-    <script src="../components/js/scroll-tracker.js"></script>
 
     <style is:global>
       :root {
@@ -48,6 +48,33 @@ import { ViewTransitions } from 'astro:transitions';
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
           Bitstream Vera Sans Mono, Courier New, monospace;
       }
+
+      .scroll-tracker {
+    display: block;
+    inset: 3.7rem 0 auto;
+    position: fixed;
+    height: 0.7rem;
+    background: #c943e4;
+    z-index: 1;
+    transform-origin: left;
+    scale: 0 1;
+    animation: scrollTracker linear;
+    animation-timeline: scroll();
+    animation-range: cover 100px cover 100%;
+  }
+
+  @keyframes scrollTracker {
+    to {
+      scale: 1 1;
+    }
+  }
+
+  @media screen and (min-width: 1023px) {
+    .scroll-tracker {
+      height: 0.4rem;
+      inset: 4.1rem 0 auto;
+    }
+  }
     </style>
   </body>
 </html>

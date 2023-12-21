@@ -5,13 +5,9 @@ import Heart from "../components/Heart.astro";
 ---
 
 <Layout title="A propos" transition:animate="slide">
-    <div class="pt-24 flex justify-center items-center">
-      <!-- <h1 class="text-white text-2xl">A propos</h1> -->
-      
-    </div>
   
 
-    <section class="container mx-auto my-4">
+    <div class="container mx-auto my-4">
       <h2 class="text-2xl font-bold mb-4 text-white">À propos de moi</h2>
       <p class="text-white mb-2"> Je m'appelle <span class="text_emphasis ml-3">Franck</span> ! <span class="text-3xl mr-2">👋</span></p>
       <p class="text-white mb-2">J'exerce depuis 2 ans le métier de développeur web.</p>
@@ -20,9 +16,9 @@ import Heart from "../components/Heart.astro";
       <p class="text-white mb-2">J'ai donc suivi une formation en cours du soir pendant deux ans.</p>
       <p class="text-white">Aujourd'hui, j'accompagne les entreprises de toutes tailles dans leurs projets web ou la création d'outils digitaux.</p>
       <span class="text-4xl mt-4">🚀🚀🚀</span>
-    </section>
+    </div>
 
-  <section class="bg-gray-200 py-2">
+  <div class="bg-gray-200 py-2">
       <div class="container mx-auto">
           <h2 class="text-2xl font-bold mb-4">Mon Expérience</h2>
           <p>J'ai passé deux ans en temps que développeur dans une entreprise de conseil et formation.</p>
@@ -30,19 +26,20 @@ import Heart from "../components/Heart.astro";
           <p>J'ai eu l'occasion de travailler en équipe, en méthode Agile, et au travers d'une gestion de projet en méthode Scrum</p>
           <p>A mon compte depuis février 2024, je travaille sur des projets web ainsi que sur de l'accompagnement à la transformation digitale des entreprises</p>
         </div>
-  </section>
+  </div>
 
-  <section class="container mx-auto my-4">
+  <div class="container mx-auto my-4">
     
     
-      <h2 class="text-2xl text-white font-bold mb-4">Mes Compétences</h2>
+      <h2 class="text-2xl text-white font-bold mb-4 w-full">Mes Compétences</h2>
       <Competences />
       <div class="my-6 relative top-6">
         <h2 class="text-2xl text-white font-bold mb-4">coding with</h2>
-        <Heart />
+        <div class="relative left-24 sm:left-14"><Heart /></div>
+        
       </div>
     
-  </section>
+  </div>
   </Layout>
 
   </div>

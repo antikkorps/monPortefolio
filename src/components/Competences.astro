@@ -13,18 +13,27 @@ import Git from "../images/logos/git.svg";
 import AstroBuild from "../images/logos/astro.png";
 import Svelte from "../images/logos/svelte.png";
 ---
-<p class="flex flex-wrap my-5"> 
-    <a href="https://nextjs.org/" target="_blank"> <img src={Nextjs.src} alt="nextjs" class="mx-2" width="80" height="80"/> </a>
-    <a href="https://nuxt.com/" target="_blank"> <img src={Nuxtjs.src} alt="nuxtjs" class="mx-2" width="80" height="80"/> </a>
-    <a href="https://vuejs.org/" target="_blank"> <img src={Vuejs.src} alt="Vuejs" class="mx-2" width="80" height="80"/> </a>
-    <a href="https://fr.legacy.reactjs.org/" target="_blank"> <img src={Reactjs.src} alt="React" class="mx-2" width="80" height="80"/> </a>
-    <a href="https://nestjs.com/" target="_blank"> <img src={Nestjs.src} alt="nestjs" class="mx-2" width="80" height="80"/> </a>
-    <a href="https://laravel.com/" target="_blank"> <img src={Laravel.src} alt="laravel" class="mx-2" width="80" height="80"/> </a>
-    <a href="https://tailwindcss.com/" target="_blank"> <img src={Tailwind.src} alt="Tailwind" class="mx-2" width="80" height="80"/> </a>
-    <a href="https://getbootstrap.com/" target="_blank"> <img src={Bootstrap.src} alt="Bootstrap" class="mx-2" width="80" height="80"/> </a> 
-    <a href="https://www.figma.com/" target="_blank"> <img src={Figma.src} alt="figma" class="mx-2" width="80" height="80"/> </a> 
-    <a href="https://ubuntu.com/" target="_blank"> <img src={Ubuntu.src} alt="ubuntu" class="mx-2" width="80" height="80"/> </a> 
-    <a href="https://git-scm.com/" target="_blank"> <img src={Git.src} alt="git" class="mx-2" width="80" height="80"/> </a>  
-    <a href="https://astro.build/" target="_blank"> <img src={AstroBuild.src} alt="astro" class="mx-2" width="80" height="80"/> </a>  
-    <a href="https://svelte.dev/" target="_blank"> <img src={Svelte.src} alt="svelte" class="mx-2" width="80" height="80"/> </a>  
+<p class="animateCompetences flex flex-wrap justify-center my-5 w-full"> 
+    <a href="https://nextjs.org/" target="_blank"> <img src={Nextjs.src} alt="nextjs" class="mx-2 my-2" width="80" height="80"/> </a>
+    <a href="https://nuxt.com/" target="_blank"> <img src={Nuxtjs.src} alt="nuxtjs" class="mx-2 my-2" width="80" height="80"/> </a>
+    <a href="https://vuejs.org/" target="_blank"> <img src={Vuejs.src} alt="Vuejs" class="mx-2 my-2" width="80" height="80"/> </a>
+    <a href="https://fr.legacy.reactjs.org/" target="_blank"> <img src={Reactjs.src} alt="React" class="mx-2 my-2" width="80" height="80"/> </a>
+    <a href="https://nestjs.com/" target="_blank"> <img src={Nestjs.src} alt="nestjs" class="mx-2 my-2" width="80" height="80"/> </a>
+    <a href="https://laravel.com/" target="_blank"> <img src={Laravel.src} alt="laravel" class="mx-2 my-2" width="80" height="80"/> </a>
+    <a href="https://tailwindcss.com/" target="_blank"> <img src={Tailwind.src} alt="Tailwind" class="mx-2 my-2" width="80" height="80"/> </a>
+    <a href="https://getbootstrap.com/" target="_blank"> <img src={Bootstrap.src} alt="Bootstrap" class="mx-2 my-2" width="80" height="80"/> </a> 
+    <a href="https://www.figma.com/" target="_blank"> <img src={Figma.src} alt="figma" class="mx-2 my-2" width="80" height="80"/> </a> 
+    <a href="https://ubuntu.com/" target="_blank"> <img src={Ubuntu.src} alt="ubuntu" class="mx-2 my-2" width="80" height="80"/> </a> 
+    <a href="https://git-scm.com/" target="_blank"> <img src={Git.src} alt="git" class="mx-2 my-2" width="80" height="80"/> </a>  
+    <a href="https://astro.build/" target="_blank"> <img src={AstroBuild.src} alt="astro" class="mx-2 my-2" width="80" height="80"/> </a>  
+    <a href="https://svelte.dev/" target="_blank"> <img src={Svelte.src} alt="svelte" class="mx-2 my-2" width="80" height="80"/> </a>  
   </p>
+
+  <style>
+    .animateCompetences {
+    animation: revealFromLeft linear;
+    animation-fill-mode: forwards;
+    animation-timeline: view() ;
+    animation-range: cover 0% contain 50%;
+    }
+  </style>
