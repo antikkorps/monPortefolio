@@ -1,0 +1,80 @@
+---
+export interface Props {
+  title: string
+  body: string
+  href: string
+}
+
+const { href, title, body } = Astro.props
+---
+
+<div class="cardOthers">
+    <div class="content">
+        <h2>{title}</h2>
+        <p>{body}</p>
+        <a href={href} class="button_secundary">En voir plus</a>
+
+    </div>
+</div>
+<style>
+.cardOthers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    margin: 0 0 20px 0;
+}
+
+.cardOthers:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: calc(-100% + 5px);
+    background: #da62c4;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardOthers:hover:before {
+    bottom: 0;
+}
+
+.content {
+    position: relative;
+    color: #777;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.cardOthers:hover .content {
+    color: #fff;
+}
+
+.cardOthers:hover .button_secundary {
+    background: #fff;
+    color: #da62c4;
+}
+
+.cardOthers:hover h2{
+    color: #fff;
+    transition: 0.3s 0.2s;
+}
+
+</style>

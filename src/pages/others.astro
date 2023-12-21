@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import FancyBorder from "../components/FancyBorder.astro";
+import CardOthers from "../components/CardOthers.astro";
 ---
 
 <Layout title="les autres projets">
@@ -9,13 +10,31 @@ import FancyBorder from "../components/FancyBorder.astro";
 
 <FancyBorder />
     
-    <p class="text-white mb-4">Voici une liste de projets que j'ai réalisé :</p>
-
     
-        <a href="/wikisearch" class="links_basics mb-3">wikisearch</a>
-        <a href="/gradient" class="links_basics mb-3">Gradient Generator</a>
-        <a href="/particules" class="links_basics mb-3">Particules Animées en JS</a>
-        <a href="/calculatrice" class="links_basics mb-3">Calculatrice en JS</a>
+    <CardOthers 
+    title="wikisearch"
+    body="Un moteur de recherche basé sur l'api de wikipedia"
+    href="/wikisearch"
+    />
+
+    <CardOthers
+    title="Gradient Generator"
+    body="Un générateur de dégradés réalisé en JS"
+    href="/gradient"
+    />
+
+    <CardOthers
+    title="Particules Animées en JS"
+    body="Un générateur de particules animées en JS"
+    href="/particules"
+    />
+
+    <CardOthers
+    title="Calculatrice en JS"
+    body="Une calculatrice en JS qui utilise de nombreux regex"
+    href="/calculatrice"
+    />
+
     </div>
 
 </Layout>
