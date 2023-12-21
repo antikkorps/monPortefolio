@@ -7,15 +7,15 @@ import Heart from "../components/Heart.astro";
 <Layout title="A propos" transition:animate="slide">
   
 
-    <div class="container mx-auto my-4">
+    <div class="container mx-auto my-4 ">
       <h2 class="text-2xl font-bold mb-4 text-white">À propos de moi</h2>
-      <p class="text-white mb-2"> Je m'appelle <span class="text_emphasis ml-3">Franck</span> ! <span class="text-3xl mr-2">👋</span></p>
+      <p class="text-white mb-2"> Je m'appelle <span class="text_emphasis ml-3">Franck</span> ! <div class="hello text-3xl w-1">👋</div></p>
       <p class="text-white mb-2">J'exerce depuis 2 ans le métier de développeur web.</p>
       <p class="text-white mb-2">Je suis issu d'une reconversion professionnelle.</p>
       <p class="text-white mb-2">J'ai décidé de transformer ma passion pour les technologies du web en métier. 🥰</p>
       <p class="text-white mb-2">J'ai donc suivi une formation en cours du soir pendant deux ans.</p>
       <p class="text-white">Aujourd'hui, j'accompagne les entreprises de toutes tailles dans leurs projets web ou la création d'outils digitaux.</p>
-      <span class="text-4xl mt-4">🚀🚀🚀</span>
+      <div class="text-4xl mt-4">🚀🚀🚀</div>
     </div>
 
   <div class="bg-gray-200 py-2">
@@ -35,12 +35,48 @@ import Heart from "../components/Heart.astro";
       <Competences />
       <div class="my-6 relative top-6">
         <h2 class="text-2xl text-white font-bold mb-4">coding with</h2>
-        <div class="relative left-24 sm:left-14"><Heart /></div>
+        <div class="absolute right-16 sm:left-14"><Heart /></div>
         
       </div>
     
   </div>
+
   </Layout>
 
   </div>
 
+  <style>
+    .hello {
+      position: relative;
+      top: -3rem;
+      left: 12rem;
+      animation: wave 4s linear infinite;
+    }
+
+    @keyframes wave {
+      0% {
+        transform: rotate(0deg);
+      }
+      10% {
+        transform: rotate(4deg);
+      }
+      20% {
+        transform: rotate(-4deg);
+      }
+      30% {
+        transform: rotate(4deg);
+      }
+      40% {
+        transform: rotate(-4deg);
+      }
+      50% {
+        transform: rotate(4deg);
+      }
+      60% {
+        transform: rotate(-4deg);
+      }
+      100% {
+        transform: rotate(4deg);
+      }
+    }
+  </style>
