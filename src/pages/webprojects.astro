@@ -12,7 +12,7 @@ import NDF from "../images/nouvellesdonnesformation.png"
 <Layout title="Projets Web">
 <div class="py-20 w-full" transition:animate="slide">
     <h2 class="text-3xl text-center text-white py-5">Mes projets web</h2>
-
+        <div class="project">
         <Webproject
         title="MaFormationImmo"
         description="Un site autour de l'offre de formation en immobilier"
@@ -22,7 +22,9 @@ import NDF from "../images/nouvellesdonnesformation.png"
         src={MaFormationImmo.src}
 
         />
+        </div>
 
+        <div class="project">
         <Webproject
         title="SaveUsLife"
         description="Un site pour un magazine sur la thématique de l'environnement"
@@ -32,7 +34,9 @@ import NDF from "../images/nouvellesdonnesformation.png"
         src={SaveUsLife.src}
 
         />
+        </div>
 
+        <div class="project">
         <Webproject
         title="Safety Case Solutions"
         description="Le site d'une entreprise proposant des malettes de sécurité"
@@ -42,7 +46,9 @@ import NDF from "../images/nouvellesdonnesformation.png"
         src={SafetyCaseSolutions.src}
 
         />
+        </div>
 
+        <div class="project">
         <Webproject
         title="Le site de l'asso"
         description="Un site pour une association fictive"
@@ -52,7 +58,9 @@ import NDF from "../images/nouvellesdonnesformation.png"
         src={LeSiteDeLasso.src}
 
         />
+        </div>
 
+        <div class="project">
         <Webproject
         title="Boxoffice-world"
         description="Boxoffice-world est un site qui récupère les statistiques des films et séries"
@@ -62,7 +70,9 @@ import NDF from "../images/nouvellesdonnesformation.png"
         src={BoxOfficeWorld.src}
 
         />
+        </div>
 
+        <div class="project">
         <Webproject
         title="Nouvelles Donnes Formation"
         description="Un site pour une entreprise de formation"
@@ -72,10 +82,21 @@ import NDF from "../images/nouvellesdonnesformation.png"
         src={NDF.src}
 
         />
+        </div>
 </div>
 
 </Layout>
 
 <style>
-    
+    .project {
+        animation: fade-out linear;
+        opacity: 1;
+        animation-timeline: view() ;
+        animation-range: exit -500px;
+    }
+    @keyframes fade-out {
+        to {
+            opacity: 0;
+        }
+    }
 </style>
