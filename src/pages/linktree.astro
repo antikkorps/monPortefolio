@@ -1,28 +1,44 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ProfilImage from "../images/profil/profil.webp"
-import Github from "../images/social/github-mark.svg"
+
 ---
 <Layout title="Mon Linktree">
     <main class="pt-32 pb-16">
       <div class="max-w-3xl mx-auto text-center">
         <div class="profileImage flex justify-center mx-auto mb-5 rounded-full overflow-hidden bg-fuchsia-800">
-        <p class="cardTitle">Franck Vienot</p>
-        <img src={ProfilImage.src} alt="Franck Vienot Profile image">
+        <p class="cardTitle">@FranckVienot</p>
+        <img src={ProfilImage.src} alt="Franck Vienot Profile">
       </div>
-        <h1 class="Linktree text-3xl font-bold mb-6">
-          Mon Linktree
+      <div class="mb-6">
+        <h1 class="Linktree text-2xl sm:text-3xl font-bold">
+          @FranckVienot
           </h1>
+        <p class="text-gray-600 mt-2">Pour me contacter sur les réseaux</p>
+      </div>
+        
   
         <div class="space-y-4">
-          <div class="">
-              <a href="https://github.com/antikkorps" target="_blank" class="block p-3 bg-blue-500 text-white rounded">
-              <img src={Github.src} alt="Github logo" width="40" height="40" />
-              <p>GitHub</p></a>
+          <div class="cardLink w-full p-3 font-bold rounded-full flex flex-row justify-around">
+              <a href="https://github.com/antikkorps" target="_blank" class="hover:text-fuchsia-500">
+              <span>GitHub</span></a>
           </div>
-          <a href="https://www.instagram.com/franckvi" target="_blank" class="block p-3 bg-blue-500 text-white rounded">Instagram</a>
-          
-          <a href="https://www.linkedin.com/in/franck-vienot-a0129a1a0/" target="_blank" class="block p-3 bg-blue-500 text-white rounded">LinkedIn</a>
+
+          <div class="cardLink w-full p-3 font-bold rounded-full flex flex-row justify-around">
+          <a href="https://www.instagram.com/franckvi" target="_blank" class="hover:text-fuchsia-500">
+            <span>Instagram</span></a>
+        </div>
+
+        <div class="cardLink w-full p-3 font-bold rounded-full flex flex-row justify-around">
+          <a href="https://www.linkedin.com/in/franck-vienot-a0129a1a0/" target="_blank" class="hover:text-fuchsia-500">
+            <span>LinkedIn</span></a>
+        </div>
+
+        <div class="cardLink w-full p-3 font-bold rounded-full flex flex-row justify-around">
+          <a href="mailto:franckvienot7@gmail.com" target="_blank" class="hover:text-fuchsia-500">
+            <span>@mail</span></a>
+        </div>
+
         </div>
       </div>
     </main>
@@ -30,10 +46,10 @@ import Github from "../images/social/github-mark.svg"
 
   <style>
     .Linktree {
-      color: #f472b6;
+      color: white;
       font-weight: 700;
       text-transform: uppercase;      
-      letter-spacing: .5rem;
+      letter-spacing: .7rem;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -95,5 +111,14 @@ import Github from "../images/social/github-mark.svg"
       transition: all 0.5s linear;
     }
 
+    .cardLink {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 25rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: white;
+    }
   
   </style>
