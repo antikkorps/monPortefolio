@@ -4,8 +4,9 @@ import Competences  from "../components/Competences.astro"
 import Heart from "../components/Heart.astro";
 ---
 
-<Layout title="A propos" transition:animate="slide">
+<Layout title="A propos">
   
+  <div transition:animate="slide">
 
     <div class="container mx-auto my-4 ">
       <h2 class="text-2xl font-bold mb-4 text-white">À propos de moi</h2>
@@ -15,15 +16,17 @@ import Heart from "../components/Heart.astro";
       <p class="text-white mb-2">J'ai décidé de transformer ma passion pour les technologies du web en métier. 🥰</p>
       <p class="text-white mb-2">J'ai donc suivi une formation en cours du soir pendant deux ans.</p>
       <p class="text-white">Aujourd'hui, j'accompagne les entreprises de toutes tailles dans leurs projets web ou la création d'outils digitaux.</p>
-      <div class="text-4xl mt-4">🚀🚀🚀</div>
+      <div class="relative">
+      <div class="rocket text-4xl mt-4">🚀🚀🚀</div>
+      </div>
     </div>
 
   <div class="bg-gray-200 py-2">
-      <div class="container mx-auto">
+      <div class="container experience mx-auto">
           <h2 class="text-2xl font-bold mb-4">Mon Expérience</h2>
-          <p>J'ai passé deux ans en temps que développeur dans une entreprise de conseil et formation.</p>
+          <p>J'ai passé deux ans en temps que développeur dans une entreprise de conseil et de formation.</p>
           <p>J'y étais formateur à l'origine puis au terme de ma formation, j'ai intégré l'équipe tech.</p>
-          <p>J'ai eu l'occasion de travailler en équipe, en méthode Agile, et au travers d'une gestion de projet en méthode Scrum</p>
+          <p>J'ai eu l'occasion de travailler en équipe, en méthode Agile, et au travers d'une gestion de projet basée sur la méthode Scrum.</p>
           <p>A mon compte depuis février 2024, je travaille sur des projets web ainsi que sur de l'accompagnement à la transformation digitale des entreprises</p>
         </div>
   </div>
@@ -35,7 +38,7 @@ import Heart from "../components/Heart.astro";
       <Competences />
       <div class="my-6 relative top-6">
         <h2 class="text-2xl text-white font-bold mb-4">coding with</h2>
-        <div class="absolute right-16 sm:left-32"><Heart /></div>
+        <div class="relative left-40 sm:left-34"><Heart /></div>
         
       </div>
     
@@ -44,6 +47,8 @@ import Heart from "../components/Heart.astro";
   </Layout>
 
   </div>
+
+</div>
 
   <style>
     .hello {
@@ -79,4 +84,22 @@ import Heart from "../components/Heart.astro";
         transform: rotate(4deg);
       }
     }
+
+    .rocket {
+      position: absolute;
+      bottom: 20;
+      left: 0;
+      animation: rocket linear;
+      animation-timeline: view();
+      animation-range: contain 50% contain 100%;
+    }
+
+  @keyframes rocket {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(1000px, 950px);
+    }
+  }
   </style>
