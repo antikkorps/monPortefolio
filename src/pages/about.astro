@@ -13,11 +13,11 @@ import Heart from "../components/Heart.astro";
       <p class="text-white mb-2"> Je m'appelle <span class="text_emphasis ml-3">Franck</span> ! <div class="hello text-3xl w-1">👋</div></p>
       <p class="text-white mb-2">J'exerce depuis 2 ans le métier de développeur web.</p>
       <p class="text-white mb-2">Je suis issu d'une reconversion professionnelle.</p>
-      <p class="text-white mb-2">J'ai décidé de transformer ma passion pour les technologies du web en métier. 🥰</p>
+      <p class="text-white mb-2">J'ai décidé de transformer ma passion pour les technologies du web en métier. <span class="text-3xl">🥰</span></p>
       <p class="text-white mb-2">J'ai donc suivi une formation en cours du soir pendant deux ans.</p>
       <p class="text-white">Aujourd'hui, j'accompagne les entreprises de toutes tailles dans leurs projets web ou la création d'outils digitaux.</p>
       <div class="relative">
-      <div class="rocket text-4xl mt-4">🚀🚀🚀</div>
+      <div class="text-4xl mt-4">🚀🚀🚀</div>
       </div>
     </div>
 
@@ -38,7 +38,7 @@ import Heart from "../components/Heart.astro";
       <Competences />
       <div class="my-6 relative top-6">
         <h2 class="text-2xl text-white font-bold mb-4">coding with</h2>
-        <div class="relative left-40 sm:left-34"><Heart /></div>
+        <div class="relative left-40 lg:left-24"><Heart /></div>
         
       </div>
     
@@ -85,21 +85,4 @@ import Heart from "../components/Heart.astro";
       }
     }
 
-    .rocket {
-      position: absolute;
-      bottom: 20;
-      left: 0;
-      animation: rocket linear;
-      animation-timeline: view();
-      animation-range: contain 50% contain 100%;
-    }
-
-  @keyframes rocket {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(1000px, 950px);
-    }
-  }
   </style>
