@@ -15,14 +15,15 @@ import NeedDev from "../components/NeedDev.astro"
   
   <Hero/>
   <main>
-        
+        <div class="bg-neutral-900 py-10">
     <NeedDev />
 
     <ImageGallery />
 
-    <section class="card_section w-full py-5">
-      <div role="list" class="sm:mx-auto flex flex-col md:flex-row justify-center items-center">
-          <div>
+        </div>
+
+    <section >
+      <div class="card_section w-full py-5 sm:mx-auto grid md:grid-cols-3 lg:grid-cols-4">
           <Card
             image={maformationImmo.src}
             href="https://maformationimmo.info/"
@@ -31,8 +32,7 @@ import NeedDev from "../components/NeedDev.astro"
             author="Franck"
             tags={["wp", "cms"]}
           />
-        </div>
-        <div>
+       
           <Card
             image={saveusLife.src}
             href="https://save-us.life/"
@@ -41,8 +41,7 @@ import NeedDev from "../components/NeedDev.astro"
             author="Franck"
             tags={["wp", "Paypal"]}
           />
-        </div>
-        <div>
+        
           <Card
             image={safetyCaseSolutions.src}
             href="https://www.safety-case-solutions.com/"
@@ -51,8 +50,7 @@ import NeedDev from "../components/NeedDev.astro"
             author="Franck"
             tags={["wp", "woocommerce"]}
           />
-        </div>
-        <div>
+        
           <Card
             image={lesitedelasso.src}
             href="https://lesitedelasso.netlify.app/"
@@ -62,8 +60,7 @@ import NeedDev from "../components/NeedDev.astro"
             tags={["bootstrap", "html"]}
           />
         </div>
-      </div>
-      <div>
+      <div class="flex justify-center mx-auto text-center w-full">
         <Citation
           author="John Woods"
           citation="Codez toujours comme si la personne qui allait maintenir votre code était un violent psychopathe qui sait où vous habitez."
