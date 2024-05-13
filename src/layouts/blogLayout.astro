@@ -1,10 +1,84 @@
 ---
-const { title } = Astro.props.frontmatter || Astro.props;
+const { title, pubDate, image } = Astro.props.frontmatter || Astro.props;
+import "/base.css"
+import Navbar from "../components/Navbar.astro"
+
+import { ViewTransitions } from 'astro:transitions';
+
+const formattedDate = new Date(pubDate).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+
+
 ---
-<html>
-  <head></head>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+
+  </head>
   <body>
-    <h1>{title}</h1>
+    <Navbar />
+    <div class="scroll-tracker"></div>
+    <div class="mt-28 flex flex-col mx-auto w-1/2">
+
+      <img src={image.url} alt={image.alt} class="my-4 w-40" />
+      <h1 class="text-2xl">{title}</h1>
+      <p class="text-gray-500 my-4">{formattedDate}</p>
+
     <slot />
+  </div>
+    
+
+    <style is:global>
+      :root {
+        --accent: 124, 58, 237;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          #da62c4 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        background-color: #f6f6f6;
+      }
+
+      code {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+          Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+
+      .scroll-tracker {
+    display: block;
+    inset: 3.7rem 0 auto;
+    position: fixed;
+    height: 0.7rem;
+    background: #c943e4;
+    z-index: 1;
+    transform-origin: left;
+    scale: 0 1;
+    animation: scrollTracker linear;
+    animation-timeline: scroll();
+    animation-range: cover 100px cover 100%;
+  }
+
+  @keyframes scrollTracker {
+    to {
+      scale: 1 1;
+    }
+  }
+
+  @media screen and (min-width: 1023px) {
+    .scroll-tracker {
+      height: 0.4rem;
+      inset: 4.1rem 0 auto;
+    }
+  }
+    </style>
   </body>
 </html>
