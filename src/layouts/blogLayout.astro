@@ -30,6 +30,11 @@ const formattedDate = new Date(pubDate).toLocaleDateString('fr-FR', { year: 'num
       <p class="text-gray-500 my-4">{formattedDate}</p>
 
     <slot />
+    <div class="w-full flex justify-end items-center my-4">
+      <button class="btn w-full sm:w-1/3">
+        <a href="/blog">Retour à la liste des articles</a>
+      </button>
+    </div>
   </div>
     
 
