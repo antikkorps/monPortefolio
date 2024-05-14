@@ -1,15 +1,27 @@
 ---
-import BaseLayout from '../layouts/Layout.astro'
-const allPosts = await Astro.glob('../pages/blog/*.md');
-const pageTitle = "My Blog";
+import BaseLayout from '../../layouts/Layout.astro'
+const allPosts = await Astro.glob('../blog/*.md');
+
+
+export function getStaticPaths() {
+  return [
+    {params: {tag: 'blogging'}},
+    {params: {tag: 'successes'}},
+    {params: {tag: 'astro'}},
+    {params: {tag: 'javascript'}},
+  ];
+}
+
+const {tag} = Astro.params
+const postsWithTag = allPosts.filter(post => post.frontmatter.tags.includes(tag));
+const pageTitle = `Posts with tag: ${tag}`;
 ---
+
 <BaseLayout title={pageTitle}>
-    <div transition:animate="slide">
-
     <div class="mt-28 flex flex-col mx-auto w-full sm:w-1/2 px-4">
-  <h1 class="text-2xl font-bold mb-10 sm:mb-4 text-white text-center">Archive de mes posts</h1>
+  <h1 class="text-2xl font-bold mb-10 sm:mb-4 text-white text-center">Posts with tag: {tag}</h1>
 
-    {allPosts.map((post) => 
+    {postsWithTag.map((post) => 
 
 <div class="flex mx-auto my-4">
 <div class="card card-compact w-96 bg-base-100 shadow-xl">
@@ -17,7 +29,7 @@ const pageTitle = "My Blog";
   <div class="card-body">
     <h2 class="card-title text-white">{post.frontmatter.title}</h2>
     <p class="text-neutral-400">{post.frontmatter.description}</p>
-    <div class="tags mt-3">
+    <div class="tags">
       {post.frontmatter.tags.map(tag => 
         <a href={`/tag/${tag}`} class="tag">{tag}</a>
       )}
@@ -30,6 +42,5 @@ const pageTitle = "My Blog";
 </div>
 
     )}
-</div>
 </div>
 </BaseLayout>

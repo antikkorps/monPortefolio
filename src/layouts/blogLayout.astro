@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar.astro"
 
 import { ViewTransitions } from 'astro:transitions';
 
+
 const formattedDate = new Date(pubDate).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
 
 
@@ -23,8 +24,8 @@ const formattedDate = new Date(pubDate).toLocaleDateString('fr-FR', { year: 'num
   <body>
     <Navbar />
     <div class="scroll-tracker"></div>
+    <div transition:animate="slide">
     <div class="mt-28 flex flex-col mx-auto w-full sm:w-1/2 px-4">
-
       <div class="mb-4">
       <img src={image.url} alt={image.alt} class="my-4 w-40" />
       <h1 class="text-2xl">{title}</h1>
@@ -37,6 +38,7 @@ const formattedDate = new Date(pubDate).toLocaleDateString('fr-FR', { year: 'num
         <a href="/blog">Retour à la liste des articles</a>
       </button>
     </div>
+  </div>
   </div>
     
 
