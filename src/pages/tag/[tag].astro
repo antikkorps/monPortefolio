@@ -18,6 +18,8 @@ const pageTitle = `Posts with tag: ${tag}`;
 ---
 
 <BaseLayout title={pageTitle}>
+  <div transition:animate="slide">
+
     <div class="mt-28 flex flex-col mx-auto w-full sm:w-1/2 px-4">
   <h1 class="text-2xl font-bold mb-10 sm:mb-4 text-white text-center">Posts with tag: {tag}</h1>
 
@@ -43,4 +45,5 @@ const pageTitle = `Posts with tag: ${tag}`;
 
     )}
 </div>
+  </div>
 </BaseLayout>
