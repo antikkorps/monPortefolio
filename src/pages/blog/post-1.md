@@ -1,9 +1,9 @@
 ---
 layout: "../../layouts/blogLayout.astro"
 
-title: "My First Blog Post"
+title: "Bienvenue sur mon blog Astro !"
 pubDate: 2024-05-13
-description: "This is the first post of my new Astro blog."
+description: "Le début de mon aventure de bloggeur fou."
 author: "Franck Vienot"
 image:
   url: "https://docs.astro.build/assets/full-logo-light.png"
