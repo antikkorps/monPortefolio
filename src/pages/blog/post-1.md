@@ -35,6 +35,9 @@ Astro adopte une approche "moins de JavaScript". Par défaut, il n’envoie que 
 
 Pour un développeur qui souhaite ajouter du contenu régulièrement, Astro offre un excellent support pour Markdown. Cela permet de rédiger et de gérer des articles de blog ou des sections de portfolio facilement sans avoir à manipuler directement du HTML et en offrant un style harmonieux sur l'ensemble des posts grâce à l'intégration de tailwindcss/typography.
 
+<!-- markdownlint-disable-next-line MD033 -->
+<iframe width="100%" src="https://www.youtube.com/embed/gxBkghlglTg?si=Fe8Sejqbbp5MKRug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Impact sur le SEO
 
 ### 1. Chargement Rapide des Pages
@@ -56,6 +59,8 @@ Un autre aspect important d'Astro est sa communauté croissante et active. La do
 La communauté Astro est également très engagée dans l'amélioration continue du framework. Des mises à jour régulières, des nouvelles fonctionnalités et des corrections de bugs témoignent de la vitalité du projet. Cette dynamique assure que les développeurs peuvent compter sur Astro non seulement aujourd'hui, mais aussi à l'avenir.
 
 ## Conclusion
+
+![Houston Astro](https://astro.build/_astro/houston.JWJVBh4U.webp)
 
 Choisir Astro pour mon portfolio a été une décision stratégique qui m'a apporté de nombreux avantages en tant que développeur, tout en optimisant la performance et le référencement de mon site. Sa simplicité d'utilisation, ses performances optimales, et son impact positif sur le SEO en font un choix idéal pour tout développeur cherchant à créer un portfolio moderne et efficace.
 
