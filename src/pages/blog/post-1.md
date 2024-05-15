@@ -44,19 +44,25 @@ Pour un développeur qui souhaite ajouter du contenu régulièrement, Astro offr
 
 Les moteurs de recherche, notamment Google, tiennent compte de la vitesse de chargement des pages dans leur algorithme de classement. Grâce à son architecture statique, Astro permet de créer des pages qui se chargent très rapidement, améliorant ainsi les chances de se classer plus haut dans les résultats de recherche.
 
+![Page Speed Desktop](../../images/pageSpeed/pageSpeedInsightsDesktop.webp)
+
+![Page Speed Mobile](../../images/pageSpeed/pageSpeedInsightsMobile.webp)
+
+Comme vous pouvez le constater sur les résultats que j'ai obtenu sur ce site, le scoring est plutôt intéressant. Cela est dû à la performance d'Astro ainsi qu'à la qualité de l'hébergement sur [Netlify](https://www.netlify.com/).
+
 ### 2. Optimisation Automatique
 
 Astro inclut des fonctionnalités d'optimisation SEO telles que la génération automatique de balises méta, des sitemaps et une prise en charge complète des URL canoniques. Ces fonctionnalités permettent de s'assurer que le contenu est correctement indexé par les moteurs de recherche.
 
 ### 3. Accessibilité
 
-En produisant du HTML statique, Astro rend les sites plus accessibles. Un contenu statique est généralement plus facile à analyser pour les moteurs de recherche et les lecteurs d'écran, ce qui améliore l'accessibilité du site et peut avoir un impact positif sur le SEO.
+En produisant du HTML statique, Astro rend les sites plus accessibles. Un contenu statique est généralement plus facile à analyser pour les moteurs de recherche et les lecteurs d'écran, ce qui améliore l'accessibilité du site et peut avoir un impact positif sur le SEO contrairement à ce que l'on peut retrouver dans le cadre de SPA (Single Page Applications).
 
 ## La Communauté Astro
 
 Un autre aspect important d'Astro est sa communauté croissante et active. La documentation officielle est claire et bien organisée, et la communauté de développeurs est toujours prête à aider. Que ce soit via des forums, des discussions sur Discord, ou des articles de blog, il existe de nombreuses ressources pour apprendre et résoudre des problèmes.
 
-La communauté Astro est également très engagée dans l'amélioration continue du framework. Des mises à jour régulières, des nouvelles fonctionnalités et des corrections de bugs témoignent de la vitalité du projet. Cette dynamique assure que les développeurs peuvent compter sur Astro non seulement aujourd'hui, mais aussi à l'avenir.
+La communauté Astro est également très engagée dans l'amélioration continue du framework. Des mises à jour régulières, des nouvelles fonctionnalités et des corrections de bugs témoignent de la vitalité du projet. Cette dynamique assure que les développeurs peuvent compter sur Astro non seulement aujourd'hui, mais aussi à l'avenir. Il est d'ailleurs possible de s'y investir à travers des contributions sur le [dépôt GitHub](https://github.com/withastro/astro)
 
 ## Conclusion
 
