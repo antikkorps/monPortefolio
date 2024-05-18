@@ -53,3 +53,34 @@ git reset HEAD~n # n étant le nombre de commits à annuler
 git checkout correct-branch
 git commit -m "Votre message"
 ```
+
+### 2. J'ai écrasé des commits avec git reset
+
+Pas de panique ! Vous pouvez récupérer les commits écrasés :
+
+```bash
+# Trouvez le hash des commits perdus
+git reflog
+
+# Restaurez le commit
+git checkout -b recovered-branch <commit-hash>
+```
+
+### 3. J'ai fait un git pull avec des conflits
+
+Les conflits lors des pulls peuvent être compliqués à gérer, mais voici comment vous en sortir :
+
+```bash
+# Annulez le pull
+git merge --abort
+
+# Ou réinitialisez votre branche
+git reset --hard origin/your-branch
+
+# Refaites le pull après avoir corrigé les conflits
+git pull
+```
+
+## Conclusion
+
+"Oh Shit, Git!?!" est une ressource essentielle à garder. Sa simplicité, sa rapidité, et son large éventail de solutions en font un outil indispensable pour résoudre les crises Git. Si vous ne l'avez pas encore consulté, je vous recommande vivement de le garder dans vos favoris. Vous ne savez jamais quand vous pourriez en avoir besoin !
