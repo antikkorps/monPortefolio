@@ -7,7 +7,7 @@ description: "I had some challenges, but asking in the community really helped!"
 image:
   url: "https://kinsta.com/wp-content/uploads/2022/05/nuxt-js-logo.jpeg"
   alt: "Thumbnail of Nuxt.js"
-pubDate: 2022-07-15
+pubDate: 2024-03-18
 tags: ["nuxt.js", "javascript", "fullstack", "community"]
 ---
 
