@@ -5,7 +5,7 @@ title: Oh Shit, Git!?! - Votre Sauveur en Cas de Crise Git
 author: Franck Vienot
 description: "Le fonctionnement de git peut parfois sembler obscur, heureusement il y a des outils pour nous aider..."
 image:
-  url: "https://www.edwardthomson.com/blog/images/ohshitgit.png"
+  url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Panic_button.jpg/800px-Panic_button.jpg?20110223110826"
   alt: "Thumbnail of OSG"
 pubDate: 2024-03-18
 tags: ["git", "versioning", "dev"]

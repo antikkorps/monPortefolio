@@ -1,14 +1,14 @@
 ---
 layout: "../../layouts/blogLayout.astro"
 
-title: Les Headless CMS - Une Révolution pour vos Projets Web
+title: "Les Headless CMS - Une Révolution pour vos Projets Web"
 author: Franck Vienot
-description: "Le fonctionnement de git peut parfois sembler obscur, heureusement il y a des outils pour nous aider..."
+description: " les Content Management Systems (CMS) jouent un rôle crucial en facilitant la gestion et la publication de contenu. Cependant, les CMS traditionnels peuvent parfois être limitants, surtout lorsqu'il s'agit de flexibilité et de performances. C'est ici que les Headless CMS entrent en jeu."
 image:
-  url: "https://www.edwardthomson.com/blog/images/ohshitgit.png"
+  url: "https://d2zv2ciw0ln4h1.cloudfront.net/uploads/strapiv4_blog_cover_1_1_a7c7d32ba6.png"
   alt: "Thumbnail of Headless CMS"
 pubDate: 2024-03-19
-tags: ["git", "versioning", "dev"]
+tags: ["headless", "cms", "dev", "blogging"]
 ---
 
 Dans le monde du développement web, les Content Management Systems (CMS) jouent un rôle crucial en facilitant la gestion et la publication de contenu. Cependant, les CMS traditionnels peuvent parfois être limitants, surtout lorsqu'il s'agit de flexibilité et de performances. C'est ici que les Headless CMS entrent en jeu. Dans cet article, nous allons explorer ce qu'est un Headless CMS et les avantages qu'il apporte à vos projets.
