@@ -35,7 +35,8 @@ NestJS adopte une architecture modulaire qui facilite la division d'une applicat
 export class AppModule {}
 ```
 
-### 2. Injection de Dépendances
+###  2. Injection de Dépendances
+
 L'injection de dépendances est une caractéristique clé de NestJS qui permet de gérer les dépendances entre les composants de manière efficace. Cela contribue à rendre le code plus testable et maintenable, ce qui est crucial pour les grandes applications.
 
 ```typescript
@@ -45,7 +46,8 @@ export class UsersService {
 }
 ```
 
-### 3. Support pour les Microservices
+###  3. Support pour les Microservices
+
 NestJS offre un support natif pour les architectures microservices, permettant de créer des applications distribuées et hautement scalables. Il fournit des outils pour la communication entre services via des protocoles comme gRPC, MQTT, Redis, et plus encore.
 
 ```typescript
@@ -57,7 +59,8 @@ NestJS offre un support natif pour les architectures microservices, permettant d
 export class AppModule {}
 ```
 
-### 4. Performance Optimisée avec Express et Fastify
+###  4. Performance Optimisée avec Express et Fastify
+
 NestJS utilise Express.js comme moteur HTTP par défaut, mais il peut également être configuré pour utiliser Fastify, un moteur HTTP plus performant. Cette flexibilité permet de choisir le moteur qui correspond le mieux aux besoins de performance de l'application.
 
 ```typescript
@@ -72,10 +75,12 @@ await app.listen(3000)
 
 Au moment de la rédaction de cet article, NestJS cumule plus d'étoiles sur GitHub qu'Express.js. Cette popularité croissante peut être attribuée à plusieurs facteurs :
 
-### 1. Communauté Active et Support
+###  1. Communauté Active et Support
+
 NestJS bénéficie d'une communauté active et d'un support solide. Les développeurs contribuent régulièrement au projet, et l'équipe derrière NestJS est réactive et dédiée à l'amélioration continue du framework.
 
-### 2. Documentation Complète et Clarté
+###  2. Documentation Complète et Clarté
+
 La documentation de NestJS est exhaustive et bien structurée, ce qui facilite l'apprentissage et l'adoption du framework. La clarté et la richesse de la documentation permettent aux développeurs de résoudre rapidement les problèmes et d'implémenter les fonctionnalités de manière efficace.
 
 ### 3. Écosystème et Outils
