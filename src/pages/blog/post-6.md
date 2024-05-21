@@ -17,6 +17,9 @@ Dans le monde du développement backend avec Node.js, Express.js a longtemps ét
 
 NestJS est un framework progressif pour construire des applications backend en Node.js. Inspiré par Angular, il utilise TypeScript comme langage principal, bien qu'il soit également compatible avec JavaScript. NestJS combine les meilleures pratiques des architectures orientées services, des design patterns comme l'injection de dépendances, et des abstractions propres pour fournir un environnement de développement robuste et modulaire.
 
+<!-- markdownlint-disable-next-line MD033 -->
+<iframe width="100%" src="https://www.youtube.com/embed/0M8AYU_hPas?si=8ALt94sB_nqf5tFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Scalabilité avec NestJS
 
 ### 1. Architecture Modulaire
