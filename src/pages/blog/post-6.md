@@ -39,7 +39,6 @@ export class AppModule {}
 L'injection de dépendances est une caractéristique clé de NestJS qui permet de gérer les dépendances entre les composants de manière efficace. Cela contribue à rendre le code plus testable et maintenable, ce qui est crucial pour les grandes applications.
 
 ```typescript
-Copier le code
 @Injectable()
 export class UsersService {
   constructor(private readonly usersRepository: UsersRepository) {}
@@ -50,13 +49,8 @@ export class UsersService {
 NestJS offre un support natif pour les architectures microservices, permettant de créer des applications distribuées et hautement scalables. Il fournit des outils pour la communication entre services via des protocoles comme gRPC, MQTT, Redis, et plus encore.
 
 ```typescript
-Copier le code
 @Module({
-  imports: [
-    ClientsModule.register([
-      { name: 'MATH_SERVICE', transport: Transport.TCP },
-    ]),
-  ],
+  imports: [ClientsModule.register([{ name: "MATH_SERVICE", transport: Transport.TCP }])],
   controllers: [MathController],
   providers: [MathService],
 })
@@ -67,12 +61,11 @@ export class AppModule {}
 NestJS utilise Express.js comme moteur HTTP par défaut, mais il peut également être configuré pour utiliser Fastify, un moteur HTTP plus performant. Cette flexibilité permet de choisir le moteur qui correspond le mieux aux besoins de performance de l'application.
 
 ```typescript
-Copier le code
 const app = await NestFactory.create<NestFastifyApplication>(
   AppModule,
-  new FastifyAdapter(),
-);
-await app.listen(3000);
+  new FastifyAdapter()
+)
+await app.listen(3000)
 ```
 
 ## Popularité Croissante sur GitHub
