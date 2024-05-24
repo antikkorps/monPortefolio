@@ -47,4 +47,4 @@ En somme, PostgreSQL offre une combinaison unique de performance, de sécurité,
 si vous souhaitez en apprendre plus, je vous conseille cette excellente vidéo de prise en main de PostgreSQL :
 
 <!-- markdownlint-disable-next-line MD033 -->
-<iframe width="100%" src="https://www.youtube.com/watch?v=qw--VYLpxG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/qw--VYLpxG4?si=H6gg1wSSZeYkyxK5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
