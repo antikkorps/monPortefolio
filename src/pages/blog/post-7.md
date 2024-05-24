@@ -43,3 +43,8 @@ La communauté autour de PostgreSQL est active et engagée. Elle contribue régu
 ## Conclusion
 
 En somme, PostgreSQL offre une combinaison unique de performance, de sécurité, d'extensibilité, et de standardisation qui en fait un choix solide pour de nombreuses applications. Que vous soyez un développeur individuel, une petite entreprise, ou une organisation à grande échelle, PostgreSQL est capable de répondre à une gamme de besoins en matière de gestion de bases de données.
+
+si vous souhaitez en apprendre plus, je vous conseille cette excellente vidéo de prise en main de PostgreSQL :
+
+<!-- markdownlint-disable-next-line MD033 -->
+<iframe width="100%" src="https://www.youtube.com/watch?v=qw--VYLpxG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
