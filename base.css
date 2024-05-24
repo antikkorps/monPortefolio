@@ -50,7 +50,7 @@
     @apply button_primary flex justify-center text-2xl text-center mx-auto my-6;
   }
   .big_cta {
-    @apply button_primary flex text-xl text-center font-bold mx-auto justify-center py-5 px-4 w-80 sm:w-1/2;
+    @apply button_primary flex text-xl text-center font-bold mx-auto justify-center py-5 px-3 w-80 sm:w-1/2;
   }
   /* LINKS ON HOVER */
   .menu_text {
