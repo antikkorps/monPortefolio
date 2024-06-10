@@ -12,7 +12,7 @@ const pageTitle = "My Blog";
 
     {allPosts.map((post) => 
 
-<div class="flex mx-auto my-4">
+<div class="flex mx-auto my-4 max-w-lg">
 <div class="card card-compact w-full mx-auto bg-base-100 shadow-xl">
   <figure><a href={post.url}><img src={post.frontmatter.image.url} alt={post.frontmatter.image.alt} /></a></figure>
   <div class="card-body">
