@@ -3,7 +3,7 @@ layout: "../../layouts/blogLayout.astro"
 
 title: Pourquoi je préfère Nuxt.js à Next.js
 author: Franck Vienot
-description: "I had some challenges, but asking in the community really helped!"
+description: "Depuis que je développe j'ai eu l'occasion de le faire sur Next et Nuxt... Voyons pourquoi je préfère Nuxt.js !"
 image:
   url: "https://kinsta.com/wp-content/uploads/2022/05/nuxt-js-logo.jpeg"
   alt: "Thumbnail of Nuxt.js"

@@ -3,7 +3,7 @@ layout: "../../layouts/blogLayout.astro"
 
 title: Prisma - L'ORM Moderne pour les Développeurs Web
 author: Franck Vienot
-description: "Dans le monde du développement web, la gestion des bases de données est une tâche cruciale mais souvent complexe. Prisma facilite cette gestion"
+description: "Dans le monde du développement web, la gestion des bases de données est une tâche cruciale mais souvent complexe. Prisma facilite cette gestion."
 image:
   url: "https://miro.medium.com/v2/resize:fit:786/format:webp/1*ciRG_7SSwuNXoSx48H_wvA.jpeg"
   alt: "Thumbnail of prisma"
