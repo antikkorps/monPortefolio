@@ -7,7 +7,7 @@ description: "HTMX se distingue comme une technologie innovante qui promet de si
 image:
   url: "https://media.licdn.com/dms/image/D4D12AQEF9-MNQb8cuA/article-cover_image-shrink_720_1280/0/1695729737133?e=2147483647&v=beta&t=-orhd2hgnUcGOi00SYj9p9AYmSyPBprbVYUY_XeEo1I"
   alt: "Thumbnail of HTMX"
-pubDate: 2024-03-24
+pubDate: 2024-06-17
 tags: ["frontend", "web", "dev", "javascript"]
 ---
 
