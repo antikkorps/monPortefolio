@@ -66,7 +66,7 @@ La communauté Astro est également très engagée dans l'amélioration continue
 
 ## Conclusion
 
-![Houston Astro](https://astro.build/_astro/houston.JWJVBh4U.webp)
+![Houston Astro](https://docs.astro.build/_astro/houston_love.BttrNCcZ_ZAldGA.webp)
 
 Choisir Astro pour mon portfolio a été une décision stratégique qui m'a apporté de nombreux avantages en tant que développeur, tout en optimisant la performance et le référencement de mon site. Sa simplicité d'utilisation, ses performances optimales, et son impact positif sur le SEO en font un choix idéal pour tout développeur cherchant à créer un portfolio moderne et efficace.
 
