@@ -6,6 +6,7 @@ const sortedPosts = allPosts.sort((a, b) => {
   const dateB = new Date(b.frontmatter.pubDate).getTime(); 
   return dateB - dateA
 });
+
 const pageTitle = "My Blog";
 
 ---
@@ -23,6 +24,7 @@ const pageTitle = "My Blog";
   <div class="card-body">
     <a href={post.url}><h2 class="card-title text-white">{post.frontmatter.title}</h2></a>
     <a href={post.url}><p class="text-neutral-400">{post.frontmatter.description}</p></a>
+
     <div class="tags mt-3">
       {post.frontmatter.tags.map(tag => 
         <a href={`/tag/${tag}`} class="tag mx-1 px-2 py-2 bg-neutral-100 text-neutral-800 rounded-lg transition-transform duration-200 hover:scale-105">{tag}</a>

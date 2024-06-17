@@ -7,7 +7,7 @@ description: "Dans le monde du d√©veloppement web, la gestion des bases de donn√
 image:
   url: "https://miro.medium.com/v2/resize:fit:786/format:webp/1*ciRG_7SSwuNXoSx48H_wvA.jpeg"
   alt: "Thumbnail of prisma"
-pubDate: 2022-07-08
+pubDate: 2024-05-08
 tags: ["blogging", "prisma", "orm"]
 ---
 
