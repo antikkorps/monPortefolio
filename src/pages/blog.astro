@@ -20,7 +20,7 @@ const pageTitle = "My Blog";
     <a href={post.url}><p class="text-neutral-400">{post.frontmatter.description}</p></a>
     <div class="tags mt-3">
       {post.frontmatter.tags.map(tag => 
-        <a href={`/tag/${tag}`} class="tag">{tag}</a>
+        <a href={`/tag/${tag}`} class="tag mx-1 px-2 py-2 bg-neutral-100 text-neutral-800 rounded-lg transition-transform duration-200 hover:scale-105">{tag}</a>
       )}
     </div>
     <div class="card-actions justify-end">

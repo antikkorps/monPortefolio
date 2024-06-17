@@ -37,7 +37,7 @@ const pageTitle = `Posts with tag: ${tag}`;
 <BaseLayout title={pageTitle}>
   <div transition:animate="slide">
 
-    <div class="mt-28 flex flex-col mx-auto w-full sm:w-1/2 px-4">
+    <div class="mt-28 flex flex-col mx-auto w-full min-h-screen sm:w-1/2 px-4">
   <h1 class="text-2xl font-bold mb-10 sm:mb-4 text-white text-center">Posts with tag: {tag}</h1>
 
     {postsWithTag.map((post) => 
@@ -48,9 +48,9 @@ const pageTitle = `Posts with tag: ${tag}`;
   <div class="card-body">
     <h2 class="card-title text-white">{post.frontmatter.title}</h2>
     <p class="text-neutral-400">{post.frontmatter.description}</p>
-    <div class="tags">
+    <div class="tags flex flex-shrink">
       {post.frontmatter.tags.map(tag => 
-        <a href={`/tag/${tag}`} class="tag">{tag}</a>
+        <a href={`/tag/${tag}`} class="tag mx-1 px-1 py-2 bg-neutral-100 text-neutral-800 rounded-lg transition-transform duration-200 hover:scale-105">{tag}</a>
       )}
     </div>
     <div class="card-actions justify-end">
