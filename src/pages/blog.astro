@@ -1,6 +1,11 @@
 ---
 import BaseLayout from '../layouts/Layout.astro'
 const allPosts = await Astro.glob('../pages/blog/*.md');
+const sortedPosts = allPosts.sort((a, b) => {
+  const dateA = new Date(a.frontmatter.pubDate).getTime(); 
+  const dateB = new Date(b.frontmatter.pubDate).getTime(); 
+  return dateB - dateA
+});
 const pageTitle = "My Blog";
 
 ---
@@ -10,7 +15,7 @@ const pageTitle = "My Blog";
     <div class="mt-28 flex flex-col mx-auto w-full sm:w-1/2 px-4">
   <h1 class="text-2xl font-bold mb-10 sm:mb-4 text-white text-center">Archive de mes posts</h1>
 
-    {allPosts.map((post) => 
+    {sortedPosts.map((post) => 
 
 <div class="flex mx-auto my-4 max-w-lg">
 <div class="card card-compact w-full mx-auto bg-base-100 shadow-xl">
