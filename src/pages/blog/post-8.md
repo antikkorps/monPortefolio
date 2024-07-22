@@ -1,4 +1,4 @@
----
+il---
 layout: "../../layouts/blogLayout.astro"
 
 title: "HTMX : La Révolution du Développement Web"
@@ -71,7 +71,7 @@ Supposons que vous voulez actualiser une partie de la page après une certaine a
 
 ## Conclusion
 
-HTMX est une technologie puissante qui simplifie le développement web en permettant de créer des interactions dynamiques directement dans le HTML. En réduisant la dépendance à JavaScript et en améliorant la lisibilité du code, HTMX peut nous aider à créer des applications web modernes de manière plus efficace et plus maintenable.
+HTMX est une technologie puissante qui simplifie le développement web en permettant de créer des interactions dynamiques directement dans le HTML. En réduisant la dépendance à JavaScript et en améliorant la lisibilité du code, HTMX peut nous aider à créer des applications web modernes de manière plus efficace et plus maintenable. il est fort à parier que l'on en entende parler de plus en plus.
 
 <!-- markdownlint-disable-next-line MD033 -->
 <iframe width="100%" src="https://www.youtube.com/embed/r-GSGH2RxJs?si=TEwovBLYB2mNB8oa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
