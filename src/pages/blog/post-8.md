@@ -1,4 +1,4 @@
-il---
+---
 layout: "../../layouts/blogLayout.astro"
 
 title: "HTMX : La Révolution du Développement Web"
