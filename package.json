@@ -17,7 +17,7 @@
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "aos": "^2.3.4",
-    "astro": "^4.14.5",
+    "astro": "^4.16.3",
     "bulma": "^0.9.4",
     "framer-motion": "^10.16.16",
     "react": "^18.2.0",
