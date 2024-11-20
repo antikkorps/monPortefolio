@@ -60,10 +60,11 @@ import Layout from "../layouts/Layout.astro"
 /* halo mooving */
 .border-animation::before {
   content: '';
-  background: linear-gradient(
-    rgb(255, 255, 255) 0%,
-    rgba(255, 255, 255, 0.8) 50%,
-    transparent 100%
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgb(63, 63, 70) 60deg,
+    transparent 120deg
   );
   animation: rotate 2s linear infinite;
 }
