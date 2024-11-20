@@ -56,4 +56,24 @@ import Layout from "../layouts/Layout.astro"
     .styledButton:hover {
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
+
+/* halo mooving */
+.border-animation::before {
+  content: '';
+  background: linear-gradient(
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    transparent 100%
+  );
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
     </style>
